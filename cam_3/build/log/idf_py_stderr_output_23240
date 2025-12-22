@@ -1,0 +1,38 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM3 instead...[0m
+[0;33m--- esp-idf-monitor 1.8.0 on \\.\COM3 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x40080400: [0;33m_init[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x40008047: [0;33mets_printf[0m[0m in [0;32mROM[0m
+[0m--- 0x40089b08: [0;33mmemcpy[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/memcpy.S[0m[0m:[1;31m162[0m
+[0m--- 0x40089b24: [0;33mmemcpy[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/memcpy.S[0m[0m:[1;31m197[0m
+[0m--- 0x40008044: [0;33mets_printf[0m[0m in [0;32mROM[0m
+[0m--- 0x4008394e: [0;33mll_cam_send_event[0m[0m at [0;32mD:/ESPproject/test_cam_3/managed_components/espressif__esp32-camera/driver/cam_hal.c[0m[0m:[1;31m259[0m
+[0m--- 0x40083a35: [0;33mll_cam_dma_isr[0m[0m at [0;32mD:/ESPproject/test_cam_3/managed_components/espressif__esp32-camera/target/esp32/ll_cam.c[0m[0m:[1;31m242[0m
+[0m--- 0x40083e1d: [0;33m_xt_lowint1[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x4009149c: [0;33mspi_flash_ll_set_cs_pin[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/hal/esp32/include/hal/spi_flash_ll.h[0m[0m:[1;31m237[0m
+[0m--- (inlined by) [0;33mspi_flash_hal_device_config[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/hal/spi_flash_hal_common.inc[0m[0m:[1;31m51[0m
+[0m--- 0x40088bb9: [0;33mspiflash_start_default[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/spi_flash/esp_flash_api.c[0m[0m:[1;31m196[0m
+[0m--- 0x40084e2d: [0;33mesp_flash_read[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/spi_flash/esp_flash_api.c[0m[0m:[1;31m921[0m
+[0m--- 0x400f3693: [0;33mesp_partition_read[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/esp_partition/partition_target.c[0m[0m:[1;31m38[0m
+[0m--- 0x400f79cd: [0;33mnvs::NVSPartition::read(unsigned int, void*, unsigned int)[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/nvs_flash/src/nvs_partition.cpp[0m[0m:[1;31m37[0m
+[0m--- (inlined by) [0;33mnvs::NVSPartition::read(unsigned int, void*, unsigned int)[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/nvs_flash/src/nvs_partition.cpp[0m[0m:[1;31m31[0m
+[0m--- 0x4017fe7f: [0;33mnvs::Page::readEntry(unsigned int, nvs::Item&) const[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/nvs_flash/src/nvs_page.cpp[0m[0m:[1;31m858[0m
+[0m--- 0x400f88a6: [0;33mnvs::Page::readItem(unsigned char, nvs::ItemType, char const*, void*, unsigned int, unsigned char, nvs::VerOffset)[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/nvs_flash/src/nvs_page.cpp[0m[0m:[1;31m284[0m
+[0m--- 0x400f6eb7: [0;33mnvs::Storage::readMultiPageBlob(unsigned char, char const*, void*, unsigned int)[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/nvs_flash/src/nvs_storage.cpp[0m[0m:[1;31m614[0m
+[0m--- 0x400f6f3d: [0;33mnvs::Storage::readItem(unsigned char, nvs::ItemType, char const*, void*, unsigned int)[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/nvs_flash/src/nvs_storage.cpp[0m[0m:[1;31m684[0m
+[0m--- 0x400f77d1: [0;33mnvs::NVSHandleSimple::get_typed_item(nvs::ItemType, char const*, void*, unsigned int)[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/nvs_flash/src/nvs_handle_simple.cpp[0m[0m:[1;31m28[0m
+[0m--- (inlined by) [0;33mnvs::NVSHandleSimple::get_typed_item(nvs::ItemType, char const*, void*, unsigned int)[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/nvs_flash/src/nvs_handle_simple.cpp[0m[0m:[1;31m24[0m
+[0m--- 0x400f6109: [0;33mnvs_get_str_or_blob(unsigned long, nvs::ItemType, char const*, void*, unsigned int*)[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/nvs_flash/src/nvs_api.cpp[0m[0m:[1;31m526[0m
+[0m--- 0x400f6461: [0;33mnvs_get_blob[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/nvs_flash/src/nvs_api.cpp[0m[0m:[1;31m536[0m
+[0m--- 0x40159053: [0;33mload_cal_data_from_nvs_handle[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/esp_phy/src/phy_init.c[0m[0m:[1;31m772[0m
+[0m--- (inlined by) [0;33mesp_phy_load_cal_data_from_nvs[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/esp_phy/src/phy_init.c[0m[0m:[1;31m690[0m
+[0m--- 0x401591ca: [0;33mesp_phy_load_cal_and_init[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/esp_phy/src/phy_init.c[0m[0m:[1;31m888[0m
+[0m--- 0x401592a1: [0;33mesp_phy_enable[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/esp_phy/src/phy_init.c[0m[0m:[1;31m300[0m
+[0m--- 0x40186861: [0;33mesp_phy_enable_wrapper[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/esp_wifi/esp32/esp_adapter.c[0m[0m:[1;31m613[0m
+[0m--- 0x40140a65: [0;33mwifi_hw_start[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x401413cd: [0;33mwifi_start_process[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x4013f3f6: [0;33mieee80211_ioctl_process[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x400954c9: [0;33mppTask[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x40080400: [0;33m_init[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m

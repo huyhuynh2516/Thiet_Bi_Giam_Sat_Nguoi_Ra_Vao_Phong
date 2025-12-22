@@ -1,0 +1,2 @@
+source D:/ESPproject/test_buzzer_3/build/bootloader/gdbinit/symbols
+source D:/ESPproject/test_buzzer_3/build/bootloader/gdbinit/connect

@@ -1,0 +1,164 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM6 instead...[0m
+[0;33m--- esp-idf-monitor 1.8.0 on \\.\COM6 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x403818bc: [0;33m__retarget_lock_acquire_recursive[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/newlib/locks.c[0m[0m:[1;31m318[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4038161c: [0;33mcheck_lock_nonzero[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/newlib/locks.c[0m[0m:[1;31m308[0m
+[0m--- 0x403818c6: [0;33m__retarget_lock_acquire_recursive[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/newlib/locks.c[0m[0m:[1;31m320[0m
+[0m--- 0x4005890e: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4038083c: [0;33mesp_restart_noos[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m115[0m
+[0m--- 0x403818bc: [0;33m__retarget_lock_acquire_recursive[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/newlib/locks.c[0m[0m:[1;31m318[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4038161c: [0;33mcheck_lock_nonzero[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/newlib/locks.c[0m[0m:[1;31m308[0m
+[0m--- 0x403818c6: [0;33m__retarget_lock_acquire_recursive[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/newlib/locks.c[0m[0m:[1;31m320[0m
+[0m--- 0x4005890e: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4038083c: [0;33mesp_restart_noos[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m115[0m
+[0m--- 0x403818bc: [0;33m__retarget_lock_acquire_recursive[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/newlib/locks.c[0m[0m:[1;31m318[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4038161c: [0;33mcheck_lock_nonzero[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/newlib/locks.c[0m[0m:[1;31m308[0m
+[0m--- 0x403818c6: [0;33m__retarget_lock_acquire_recursive[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/newlib/locks.c[0m[0m:[1;31m320[0m
+[0m--- 0x4005890e: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4038083c: [0;33mesp_restart_noos[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m115[0m
+[0m--- 0x403818bc: [0;33m__retarget_lock_acquire_recursive[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/newlib/locks.c[0m[0m:[1;31m318[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4038161c: [0;33mcheck_lock_nonzero[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/newlib/locks.c[0m[0m:[1;31m308[0m
+[0m--- 0x403818c6: [0;33m__retarget_lock_acquire_recursive[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/newlib/locks.c[0m[0m:[1;31m320[0m
+[0m--- 0x4005890e: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4038083c: [0;33mesp_restart_noos[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m115[0m
+[0m--- 0x403818bc: [0;33m__retarget_lock_acquire_recursive[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/newlib/locks.c[0m[0m:[1;31m318[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4038161c: [0;33mcheck_lock_nonzero[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/newlib/locks.c[0m[0m:[1;31m308[0m
+[0m--- 0x403818c6: [0;33m__retarget_lock_acquire_recursive[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/newlib/locks.c[0m[0m:[1;31m320[0m
+[0m--- 0x4005890e: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4038083c: [0;33mesp_restart_noos[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m115[0m
+[0m--- 0x403818bc: [0;33m__retarget_lock_acquire_recursive[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/newlib/locks.c[0m[0m:[1;31m318[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4038161c: [0;33mcheck_lock_nonzero[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/newlib/locks.c[0m[0m:[1;31m308[0m
+[0m--- 0x403818c6: [0;33m__retarget_lock_acquire_recursive[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/newlib/locks.c[0m[0m:[1;31m320[0m
+[0m--- 0x4005890e: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4038083c: [0;33mesp_restart_noos[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m115[0m
+[0m--- 0x403818bc: [0;33m__retarget_lock_acquire_recursive[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/newlib/locks.c[0m[0m:[1;31m318[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4038161c: [0;33mcheck_lock_nonzero[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/newlib/locks.c[0m[0m:[1;31m308[0m
+[0m--- 0x403818c6: [0;33m__retarget_lock_acquire_recursive[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/newlib/locks.c[0m[0m:[1;31m320[0m
+[0m--- 0x4005890e: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4038083c: [0;33mesp_restart_noos[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m115[0m
+[0m--- 0x403818bc: [0;33m__retarget_lock_acquire_recursive[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/newlib/locks.c[0m[0m:[1;31m318[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4038161c: [0;33mcheck_lock_nonzero[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/newlib/locks.c[0m[0m:[1;31m308[0m
+[0m--- 0x403818c6: [0;33m__retarget_lock_acquire_recursive[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/newlib/locks.c[0m[0m:[1;31m320[0m
+[0m--- 0x4005890e: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4038083c: [0;33mesp_restart_noos[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m115[0m
+[0m--- 0x403818bc: [0;33m__retarget_lock_acquire_recursive[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/newlib/locks.c[0m[0m:[1;31m318[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4038161c: [0;33mcheck_lock_nonzero[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/newlib/locks.c[0m[0m:[1;31m308[0m
+[0m--- 0x403818c6: [0;33m__retarget_lock_acquire_recursive[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/newlib/locks.c[0m[0m:[1;31m320[0m
+[0m--- 0x4005890e: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4038083c: [0;33mesp_restart_noos[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m115[0m
+[0m--- 0x403818bc: [0;33m__retarget_lock_acquire_recursive[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/newlib/locks.c[0m[0m:[1;31m318[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4038161c: [0;33mcheck_lock_nonzero[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/newlib/locks.c[0m[0m:[1;31m308[0m
+[0m--- 0x403818c6: [0;33m__retarget_lock_acquire_recursive[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/newlib/locks.c[0m[0m:[1;31m320[0m
+[0m--- 0x4005890e: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4038083c: [0;33mesp_restart_noos[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m115[0m
+[0m--- 0x403818bc: [0;33m__retarget_lock_acquire_recursive[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/newlib/locks.c[0m[0m:[1;31m318[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4038161c: [0;33mcheck_lock_nonzero[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/newlib/locks.c[0m[0m:[1;31m308[0m
+[0m--- 0x403818c6: [0;33m__retarget_lock_acquire_recursive[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/newlib/locks.c[0m[0m:[1;31m320[0m
+[0m--- 0x4005890e: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4038083c: [0;33mesp_restart_noos[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m115[0m
+[0m--- 0x403818bc: [0;33m__retarget_lock_acquire_recursive[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/newlib/locks.c[0m[0m:[1;31m318[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4038161c: [0;33mcheck_lock_nonzero[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/newlib/locks.c[0m[0m:[1;31m308[0m
+[0m--- 0x403818c6: [0;33m__retarget_lock_acquire_recursive[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/newlib/locks.c[0m[0m:[1;31m320[0m
+[0m--- 0x4005890e: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4038083c: [0;33mesp_restart_noos[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m115[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0m--- 0x403818bc: [0;33m__retarget_lock_acquire_recursive[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/newlib/locks.c[0m[0m:[1;31m318[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4038161c: [0;33mcheck_lock_nonzero[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/newlib/locks.c[0m[0m:[1;31m308[0m
+[0m--- 0x403818c6: [0;33m__retarget_lock_acquire_recursive[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/newlib/locks.c[0m[0m:[1;31m320[0m
+[0m--- 0x4005890e: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4038083c: [0;33mesp_restart_noos[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m115[0m
+[0m--- 0x403818bc: [0;33m__retarget_lock_acquire_recursive[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/newlib/locks.c[0m[0m:[1;31m318[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4038161c: [0;33mcheck_lock_nonzero[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/newlib/locks.c[0m[0m:[1;31m308[0m
+[0m--- 0x403818c6: [0;33m__retarget_lock_acquire_recursive[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/newlib/locks.c[0m[0m:[1;31m320[0m
+[0m--- 0x4005890e: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mD:/Espressif/frameworks/esp-idf-v5.4.3/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0m
+Traceback (most recent call last):
+  File "D:\Espressif\frameworks\esp-idf-v5.4.3\tools/idf_monitor.py", line 11, in <module>
+    sys.exit(subprocess.run([sys.executable, '-m', 'esp_idf_monitor'] + sys.argv[1:]).returncode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "subprocess.py", line 550, in run
+  File "subprocess.py", line 1199, in communicate
+  File "subprocess.py", line 1262, in wait
+  File "subprocess.py", line 1543, in _wait
+KeyboardInterrupt

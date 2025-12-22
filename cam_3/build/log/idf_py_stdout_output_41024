@@ -1,0 +1,152 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:5172
+load:0x40078000,len:15232
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3740
+entry 0x4008061c
+[0;32mI (31) boot: ESP-IDF v5.4.3 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 21 2025 15:42:00[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2a818h (174104) map[0m
+[0;32mI (150) esp_image: segment 1: paddr=0003a840 vaddr=3ffb0000 size=057d8h ( 22488) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=9b290h (635536) map[0m
+[0;32mI (376) esp_image: segment 3: paddr=000db2b8 vaddr=3ffb57d8 size=008dch (  2268) load[0m
+[0;32mI (377) esp_image: segment 4: paddr=000dbb9c vaddr=40080000 size=17ed0h ( 98000) load[0m
+[0;32mI (418) esp_image: segment 5: paddr=000f3a74 vaddr=50000000 size=0001ch (    28) load[0m
+[0;32mI (430) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (430) boot: Disabling RNG early entropy source...[0m
+[0;32mI (440) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (441) esp_psram: Found 2MB PSRAM device[0m
+[0;32mI (441) esp_psram: Speed: 40MHz[0m
+[0;32mI (441) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;32mI (448) cpu_start: Multicore app[0m
+[0;32mI (897) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (905) cpu_start: Pro cpu start user code[0m
+[0;32mI (905) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (905) app_init: Application information:[0m
+[0;32mI (905) app_init: Project name:     test_cam_3[0m
+[0;32mI (910) app_init: App version:      1[0m
+[0;32mI (913) app_init: Compile time:     Dec 21 2025 15:41:31[0m
+[0;32mI (918) app_init: ELF file SHA256:  8060cc44a...[0m
+[0;32mI (922) app_init: ESP-IDF:          v5.4.3[0m
+[0;32mI (926) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (930) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (934) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (938) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (944) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (949) heap_init: At 3FFBB0C8 len 00024F38 (147 KiB): DRAM[0m
+[0;32mI (954) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (960) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (965) heap_init: At 40097ED0 len 00008130 (32 KiB): IRAM[0m
+[0;32mI (971) esp_psram: Adding pool of 2048K of PSRAM memory to heap allocator[0m
+[0;32mI (978) spi_flash: detected chip: generic[0m
+[0;32mI (981) spi_flash: flash io: dio[0m
+[0;32mI (985) main_task: Started on CPU0[0m
+[0;32mI (995) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (995) main_task: Calling app_main()[0m
+[0;32mI (995) ESP32-CAM: [0m
+=== ESP32-CAM Pure ESP-IDF Starting ===
+[0;32mI (1015) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (1025) cam_hal: cam init ok[0m
+[0;32mI (1025) sccb-ng: pin_sda 26 pin_scl 27[0m
+[0;32mI (1025) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1025) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1065) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1065) camera: Detected OV2640 camera[0m
+[0;32mI (1065) camera: Detected camera at address=0x30[0m
+[0;32mI (1135) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (1135) cam_hal: buffer_size: 32768, half_buffer_size: 4096, node_buffer_size: 2048, node_cnt: 16, total_cnt: 23[0m
+[0;32mI (1145) cam_hal: Allocating 96000 Byte frame buffer in PSRAM[0m
+[0;32mI (1145) cam_hal: cam config ok[0m
+[0;32mI (1145) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+[0;32mI (1215) ESP32-CAM: Camera initialized[0m
+[0;32mI (1215) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1215) ESP32-CAM: Flash LED initialized[0m
+[0;32mI (1235) wifi:wifi driver task: 3ffd43c4, prio:23, stack:6656, core=0[0m
+[0;32mI (1235) wifi:wifi firmware version: e8ce6e2[0m
+[0;32mI (1235) wifi:wifi certification version: v7.0[0m
+[0;32mI (1235) wifi:config NVS flash: enabled[0m
+[0;32mI (1245) wifi:config nano formatting: disabled[0m
+[0;32mI (1245) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1255) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1255) wifi:Init management short buffer num: 32[0m
+[0;32mI (1255) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1265) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1265) wifi:Init static rx bcam_hal: NO-SOI - JPEG start marker missing[0m
+cam_hal: NO-SOI - JPEG start marker missing
+uffer num: 10
+[0;32mI (1275) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1285) wifi_init: rx ba win: 6[0m
+[0;32mI (1285) wifi_init: accept mbox: 6[0m
+[0;32mI (1285) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1295) wifi_init: udp mbox: 6[0m
+[0;32mI (1295) wifi_init: tcp mbox: 6[0m
+[0;32mI (1295) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1305) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1305) wifi_init: tcp mss: 1440[0m
+[0;32mI (1305) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1315) wifi_init: WiFi RX IRAM OP enabled[0m
+cam_hal: EV-EOF-OVF
+[0;32mI (1335) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;33mW (1335) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;32mI (1405) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(2)[0m
+[0;32mI (1415) wifi:mode : sta (e8:6b:ea:ca:bf:c8)[0m
+[0;32mI (1415) wifi:enable tsf[0m
+[0;32mI (1415) ESP32-CAM: WiFi started, connecting to Hieu Nguyen...[0m
+[0;32mI (1965) wifi:new:<3,0>, old:<1,0>, ap:<255,255>, sta:<3,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1965) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1975) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1985) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (2005) wifi:connected with Hieu Nguyen, aid = 20, channel 3, BW20, bssid = 68:9e:29:a4:42:86[0m
+[0;32mI (2005) wifi:security: WPA2-PSK, phy: bgn, rssi: -62[0m
+[0;32mI (2025) wifi:pm start, type: 1[0m
+
+[0;32mI (2025) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (2035) wifi:<ba-add>idx:0 (ifx:0, 68:9e:29:a4:42:86), tid:0, ssn:2, winSize:64[0m
+[0;32mI (2105) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (5285) esp_netif_handlers: sta ip: 192.168.1.138, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (5285) ESP32-CAM: Got IP: 192.168.1.138[0m
+[0;32mI (6425) ESP32-CAM: SNTP initialized[0m
+[0;32mI (6425) ESP32-CAM: Starting HTTP server on port 80[0m
+[0;32mI (6425) ESP32-CAM: HTTP server started[0m
+[0;32mI (6425) ESP32-CAM: === System Ready ===[0m
+[0;32mI (6425) ESP32-CAM: Open browser and go to ESP32-CAM IP address[0m
+[0;32mI (6435) ESP32-CAM: ========================[0m
+[0;33mW (55365) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (55365) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;33mW (55375) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (55375) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (55385) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (93465) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (93465) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;33mW (93465) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (93465) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (93485) ESP32-CAM: === CAPTURE REQUEST ===[0m
+[0;32mI (94485) ESP32-CAM: Flushing camera buffers...[0m
+[0;32mI (95445) ESP32-CAM: Flash ON[0m
+[0;32mI (95645) ESP32-CAM: Flash OFF - Captured 21008 bytes[0m
+[0;32mI (95645) ESP32-CAM: Connecting to SMTP server...[0m
+[0;32mI (95755) wifi:<ba-add>idx:1 (ifx:0, 68:9e:29:a4:42:86), tid:1, ssn:1, winSize:64[0m
+[0;32mI (96885) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (97695) ESP32-CAM: TLS connected to SMTP[0m
+[0;32mI (98375) ESP32-CAM: SMTP: 220 smtp.gmail.com ESMTP d9443c01a7336-2a2f3d5d86esm65712845ad.74 - gsmtp[0m
+�����#
+[0;32mI (102265) ESP32-CAM: Email sent successfully! Total: 1[0m
+[0;32mI (102265) ESP32-CAM: === SUCCESS ===[0m

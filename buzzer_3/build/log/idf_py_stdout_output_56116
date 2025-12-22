@@ -1,0 +1,187 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xd (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1574
+load:0x403cc710,len:0xc34
+load:0x403ce710,len:0x2f64
+entry 0x403cc71a
+[0;32mI (30) boot: ESP-IDF v5.4.3 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Dec 22 2025 14:20:16[0m
+[0;32mI (30) boot: chip revision: v0.4[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (38) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=19ab0h (105136) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=00029ad8 vaddr=3fc93c00 size=02e90h ( 11920) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0002c970 vaddr=40380000 size=036a8h ( 13992) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=93d10h (605456) map[0m
+[0;32mI (213) esp_image: segment 4: paddr=000c3d38 vaddr=403836a8 size=104f8h ( 66808) load[0m
+[0;32mI (226) esp_image: segment 5: paddr=000d4238 vaddr=50000000 size=0001ch (    28) load[0m
+[0;32mI (232) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (233) boot: Disabling RNG early entropy source...[0m
+[0;32mI (243) cpu_start: Unicore app[0m
+[0;32mI (252) cpu_start: Pro cpu start user code[0m
+[0;32mI (252) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (252) app_init: Application information:[0m
+[0;32mI (252) app_init: Project name:     test_buzzer_3[0m
+[0;32mI (256) app_init: App version:      1[0m
+[0;32mI (260) app_init: Compile time:     Dec 22 2025 14:23:26[0m
+[0;32mI (265) app_init: ELF file SHA256:  dd8a030e5...[0m
+[0;32mI (269) app_init: ESP-IDF:          v5.4.3[0m
+[0;32mI (273) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (277) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (281) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (285) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (291) heap_init: At 3FC9B770 len 00024890 (146 KiB): RAM[0m
+[0;32mI (296) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (302) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (308) heap_init: At 5000001C len 00001FCC (7 KiB): RTCRAM[0m
+[0;32mI (314) spi_flash: detected chip: generic[0m
+[0;32mI (317) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (339) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (345) main_task: Started on CPU0[0m
+[0;32mI (355) main_task: Calling app_main()[0m
+[0;32mI (355) BUZZER_SERVER: === ESP32-C3 Buzzer Server (Interruptible) ===[0m
+[0;32mI (365) gpio: GPIO[10]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (365) BUZZER_SERVER: [GPIO] Buzzer ready on GPIO10[0m
+[0;32mI (375) BUZZER_SERVER: [ISR] Service installed[0m
+[0;32mI (375) gpio: GPIO[9]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (385) BUZZER_SERVER: [GPIO] Button configured on GPIO9[0m
+[0;32mI (385) BUZZER_SERVER: [ISR] Button handler added[0m
+[0;32mI (395) BUZZER_SERVER: [BUTTON] Task started[0m
+[0;32mI (395) BUZZER_SERVER: [AUTO BUZZER] Task started[0m
+[0;32mI (405) pp: pp rom version: 9387209[0m
+[0;32mI (405) net80211: net80211 rom version: 9387209[0m
+[0;32mI (415) wifi:wifi driver task: 3fca6694, prio:23, stack:6656, core=0[0m
+[0;32mI (425) wifi:wifi firmware version: e8ce6e2[0m
+[0;32mI (425) wifi:wifi certification version: v7.0[0m
+[0;32mI (425) wifi:config NVS flash: enabled[0m
+[0;32mI (425) wifi:config nano formatting: disabled[0m
+[0;32mI (425) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (435) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (435) wifi:Init management short buffer num: 32[0m
+[0;32mI (445) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (445) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (455) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (455) wifi:Init static rx buffer num: 10[0m
+[0;32mI (455) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (465) wifi_init: rx ba win: 6[0m
+[0;32mI (465) wifi_init: accept mbox: 6[0m
+[0;32mI (465) wifi_init: tcpip mbox: 32[0m
+[0;32mI (475) wifi_init: udp mbox: 6[0m
+[0;32mI (475) wifi_init: tcp mbox: 6[0m
+[0;32mI (475) wifi_init: tcp tx win: 5760[0m
+[0;32mI (485) wifi_init: tcp rx win: 5760[0m
+[0;32mI (485) wifi_init: tcp mss: 1440[0m
+[0;32mI (485) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (485) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (495) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (505) phy_init: phy_version 1201,bae5dd99,Mar  3 2025,15:36:21[0m
+[0;32mI (555) wifi:mode : sta (d8:3b:da:27:99:58)[0m
+[0;32mI (555) wifi:enable tsf[0m
+[0;32mI (555) BUZZER_SERVER: wifi_init_sta finished.[0m
+[0;32mI (555) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (555) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3145) wifi:state: auth -> init (0x200)[0m
+[0;32mI (3155) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3155) BUZZER_SERVER: Retry to connect to the AP[0m
+[0;32mI (3155) BUZZER_SERVER: Connect to the AP fail[0m
+[0;32mI (5565) BUZZER_SERVER: Retry to connect to the AP[0m
+[0;32mI (5565) BUZZER_SERVER: Connect to the AP fail[0m
+[0;32mI (5565) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (5565) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (6135) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (6145) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (6165) wifi:connected with Noobs, aid = 4, channel 1, BW20, bssid = 12:ef:87:e0:31:53[0m
+[0;32mI (6165) wifi:security: WPA3-SAE, phy: bgn, rssi: -33[0m
+[0;32mI (6165) wifi:pm start, type: 1[0m
+
+[0;32mI (6175) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (6175) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (6205) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (6205) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (7215) esp_netif_handlers: sta ip: 10.160.206.5, mask: 255.255.255.0, gw: 10.160.206.142[0m
+[0;32mI (7215) BUZZER_SERVER: Got IP:10.160.206.5[0m
+[0;32mI (7215) BUZZER_SERVER: Connected to AP SSID:Noobs[0m
+[0;32mI (7215) BUZZER_SERVER: Socket created[0m
+[0;32mI (7215) BUZZER_SERVER: Socket bound, port 8080[0m
+[0;32mI (7225) BUZZER_SERVER: Socket listening[0m
+[0;32mI (7225) BUZZER_SERVER: ========================[0m
+[0;32mI (7235) BUZZER_SERVER: Waiting for buzzer commands...[0m
+[0;32mI (7235) BUZZER_SERVER: === System Ready ===[0m
+[0;32mI (7245) BUZZER_SERVER: [0m
+[0;32mI (7245) BUZZER_SERVER: Usage:[0m
+[0;32mI (7245) BUZZER_SERVER:   1. Press button -> Buzzer ON (manual, stays on)[0m
+[0;32mI (7255) BUZZER_SERVER:   2. Press button -> Buzzer OFF (stops immediately)[0m
+[0;32mI (7255) BUZZER_SERVER:   3. ESP32-CAM trigger -> Buzzer ON for 20s (auto-off)[0m
+[0;32mI (7265) BUZZER_SERVER:   4. During auto mode, press button -> Can stop anytime![0m
+[0;32mI (7275) BUZZER_SERVER: [0m
+[0;32mI (7275) BUZZER_SERVER: [STATUS] Buzzer=OFF 🔇 | Mode=MANUAL | Button=GPIO9(1)[0m
+[0;32mI (12285) BUZZER_SERVER: [STATUS] Buzzer=OFF 🔇 | Mode=MANUAL | Button=GPIO9(1)[0m
+[0;32mI (17285) BUZZER_SERVER: [STATUS] Buzzer=OFF 🔇 | Mode=MANUAL | Button=GPIO9(1)[0m
+[0;32mI (22285) BUZZER_SERVER: [STATUS] Buzzer=OFF 🔇 | Mode=MANUAL | Button=GPIO9(1)[0m
+[0;32mI (27285) BUZZER_SERVER: [STATUS] Buzzer=OFF 🔇 | Mode=MANUAL | Button=GPIO9(1)[0m
+[0;32mI (32285) BUZZER_SERVER: [STATUS] Buzzer=OFF 🔇 | Mode=MANUAL | Button=GPIO9(1)[0m
+[0;32mI (37285) BUZZER_SERVER: [STATUS] Buzzer=OFF 🔇 | Mode=MANUAL | Button=GPIO9(1)[0m
+[0;32mI (42285) BUZZER_SERVER: [STATUS] Buzzer=OFF 🔇 | Mode=MANUAL | Button=GPIO9(1)[0m
+[0;32mI (46975) BUZZER_SERVER: [HTTP] Buzzer trigger from ESP32-CAM[0m
+[0;32mI (46975) BUZZER_SERVER: [AUTO BUZZER] Received trigger from ESP32-CAM[0m
+[0;32mI (46975) BUZZER_SERVER: [AUTO BUZZER] ON (will auto-off after 20s, or press button to stop)[0m
+[0;32mI (47285) BUZZER_SERVER: [STATUS] Buzzer=ON 🔊 | Mode=AUTO | Button=GPIO9(1)[0m
+[0;33mW (50945) BUZZER_SERVER: [BUTTON] ISR triggered! Level after 50ms=0[0m
+[0;32mI (50945) BUZZER_SERVER: >>> [BUTTON] Buzzer turned OFF 🔇 <<<[0m
+[0;32mI (51145) BUZZER_SERVER: [BUTTON] Confirmation beep done[0m
+[0;33mW (51195) BUZZER_SERVER: [BUTTON] ISR triggered! Level after 50ms=1[0m
+[0;33mW (51195) BUZZER_SERVER: [BUTTON] Ignored - noise detected[0m
+[0;33mW (52105) BUZZER_SERVER: [BUTTON] ISR triggered! Level after 50ms=0[0m
+[0;32mI (52105) BUZZER_SERVER: >>> [BUTTON] Buzzer turned ON (manual mode) 🔊 <<<[0m
+[0;33mW (52155) BUZZER_SERVER: [BUTTON] ISR triggered! Level after 50ms=0[0m
+[0;33mW (52155) BUZZER_SERVER: [BUTTON] Ignored - debounce[0m
+[0;33mW (52205) BUZZER_SERVER: [BUTTON] ISR triggered! Level after 50ms=0[0m
+[0;33mW (52205) BUZZER_SERVER: [BUTTON] Ignored - debounce[0m
+[0;32mI (52285) BUZZER_SERVER: [STATUS] Buzzer=ON 🔊 | Mode=MANUAL | Button=GPIO9(1)[0m
+[0;33mW (52315) BUZZER_SERVER: [BUTTON] ISR triggered! Level after 50ms=1[0m
+[0;33mW (52315) BUZZER_SERVER: [BUTTON] Ignored - noise detected[0m
+[0;33mW (53205) BUZZER_SERVER: [BUTTON] ISR triggered! Level after 50ms=0[0m
+[0;32mI (53205) BUZZER_SERVER: >>> [BUTTON] Buzzer turned OFF 🔇 <<<[0m
+[0;32mI (53405) BUZZER_SERVER: [BUTTON] Confirmation beep done[0m
+[0;33mW (53455) BUZZER_SERVER: [BUTTON] ISR triggered! Level after 50ms=1[0m
+[0;33mW (53455) BUZZER_SERVER: [BUTTON] Ignored - noise detected[0m
+[0;32mI (57285) BUZZER_SERVER: [STATUS] Buzzer=OFF 🔇 | Mode=MANUAL | Button=GPIO9(1)[0m
+[0;32mI (62285) BUZZER_SERVER: [STATUS] Buzzer=OFF 🔇 | Mode=MANUAL | Button=GPIO9(1)[0m
+[0;32mI (67285) BUZZER_SERVER: [STATUS] Buzzer=OFF 🔇 | Mode=MANUAL | Button=GPIO9(1)[0m
+[0;32mI (72285) BUZZER_SERVER: [STATUS] Buzzer=OFF 🔇 | Mode=MANUAL | Button=GPIO9(1)[0m
+[0;32mI (76265) BUZZER_SERVER: [HTTP] Buzzer trigger from ESP32-CAM[0m
+[0;32mI (76265) BUZZER_SERVER: [AUTO BUZZER] Received trigger from ESP32-CAM[0m
+[0;32mI (76265) BUZZER_SERVER: [AUTO BUZZER] ON (will auto-off after 20s, or press button to stop)[0m
+[0;32mI (77285) BUZZER_SERVER: [STATUS] Buzzer=ON 🔊 | Mode=AUTO | Button=GPIO9(1)[0m
+[0;33mW (78005) BUZZER_SERVER: [BUTTON] ISR triggered! Level after 50ms=0[0m
+[0;32mI (78005) BUZZER_SERVER: >>> [BUTTON] Buzzer turned OFF 🔇 <<<[0m
+[0;32mI (78205) BUZZER_SERVER: [BUTTON] Confirmation beep done[0m
+[0;33mW (78255) BUZZER_SERVER: [BUTTON] ISR triggered! Level after 50ms=1[0m
+[0;33mW (78255) BUZZER_SERVER: [BUTTON] Ignored - noise detected[0m
+[0;33mW (78305) BUZZER_SERVER: [BUTTON] ISR triggered! Level after 50ms=1[0m
+[0;33mW (78305) BUZZER_SERVER: [BUTTON] Ignored - noise detected[0m
+[0;33mW (78355) BUZZER_SERVER: [BUTTON] ISR triggered! Level after 50ms=1[0m
+[0;33mW (78355) BUZZER_SERVER: [BUTTON] Ignored - noise detected[0m
+[0;33mW (78405) BUZZER_SERVER: [BUTTON] ISR triggered! Level after 50ms=1[0m
+[0;33mW (78405) BUZZER_SERVER: [BUTTON] Ignored - noise detected[0m
+[0;33mW (78455) BUZZER_SERVER: [BUTTON] ISR triggered! Level after 50ms=1[0m
+[0;33mW (78455) BUZZER_SERVER: [BUTTON] Ignored - noise detected[0m
+[0;33mW (78505) BUZZER_SERVER: [BUTTON] ISR triggered! Level after 50ms=1[0m
+[0;33mW (78505) BUZZER_SERVER: [BUTTON] Ignored - noise detected[0m
+[0;33mW (78555) BUZZER_SERVER: [BUTTON] ISR triggered! Level after 50ms=1[0m
+[0;33mW (78555) BUZZER_SERVER: [BUTTON] Ignored - noise detected[0m
+[0;32mI (82285) BUZZER_SERVER: [STATUS] Buzzer=OFF 🔇 | Mode=MANUAL | Button=GPIO9(1)[0m

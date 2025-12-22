@@ -1,0 +1,420 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:5172
+load:0x40078000,len:15232
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3740
+entry 0x4008061c
+[0;32mI (31) boot: ESP-IDF v5.4.3 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 21 2025 15:42:00[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2d6b8h (186040) map[0m
+[0;32mI (154) esp_image: segment 1: paddr=0003d6e0 vaddr=3ffb0000 size=02938h ( 10552) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=a4e90h (675472) map[0m
+[0;32mI (389) esp_image: segment 3: paddr=000e4eb8 vaddr=3ffb2938 size=0389ch ( 14492) load[0m
+[0;32mI (395) esp_image: segment 4: paddr=000e875c vaddr=40080000 size=18c44h (101444) load[0m
+[0;32mI (434) esp_image: segment 5: paddr=001013a8 vaddr=50000000 size=0001ch (    28) load[0m
+[0;32mI (447) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (447) boot: Disabling RNG early entropy source...[0m
+[0;32mI (457) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (458) esp_psram: Found 4MB PSRAM device[0m
+[0;32mI (458) esp_psram: Speed: 40MHz[0m
+[0;32mI (458) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;32mI (465) cpu_start: Multicore app[0m
+[0;32mI (1359) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1367) cpu_start: Pro cpu start user code[0m
+[0;32mI (1367) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1367) app_init: Application information:[0m
+[0;32mI (1367) app_init: Project name:     test_cam_3[0m
+[0;32mI (1371) app_init: App version:      1[0m
+[0;32mI (1375) app_init: Compile time:     Dec 21 2025 16:35:30[0m
+[0;32mI (1380) app_init: ELF file SHA256:  304a0f65b...[0m
+[0;32mI (1384) app_init: ESP-IDF:          v5.4.3[0m
+[0;32mI (1388) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1392) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (1396) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (1400) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1406) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1412) heap_init: At 3FFBB210 len 00024DF0 (147 KiB): DRAM[0m
+[0;32mI (1417) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1422) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1428) heap_init: At 40098C44 len 000073BC (28 KiB): IRAM[0m
+[0;32mI (1434) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (1441) spi_flash: detected chip: generic[0m
+[0;32mI (1444) spi_flash: flash io: dio[0m
+[0;32mI (1448) main_task: Started on CPU0[0m
+[0;32mI (1458) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1458) main_task: Calling app_main()[0m
+[0;32mI (1458) ESP32-CAM: [0m
+=== ESP32-CAM Pure ESP-IDF Starting ===
+[0;32mI (1498) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (1498) cam_hal: cam init ok[0m
+[0;32mI (1498) sccb-ng: pin_sda 26 pin_scl 27[0m
+[0;32mI (1498) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1498) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1538) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1538) camera: Detected OV2640 camera[0m
+[0;32mI (1538) camera: Detected camera at address=0x30[0m
+[0;32mI (1608) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (1608) cam_hal: buffer_size: 32768, half_buffer_size: 4096, node_buffer_size: 2048, node_cnt: 16, total_cnt: 23[0m
+[0;32mI (1618) cam_hal: Allocating 96000 Byte frame buffer in PSRAM[0m
+[0;32mI (1618) cam_hal: cam config ok[0m
+[0;32mI (1618) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+[0;32mI (1688) ESP32-CAM: Camera initialized[0m
+[0;32mI (1688) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1688) ESP32-CAM: Flash LED initialized[0m
+[0;32mI (1708) wifi:wifi driver task: 3ffd475c, prio:23, stack:6656, core=0[0m
+[0;32mI (1718) wifi:wifi firmware version: e8ce6e2[0m
+[0;32mI (1718) wifi:wifi certification version: v7.0[0m
+[0;32mI (1718) wifi:config NVS flash: enabled[0m
+[0;32mI (1718) wifi:config nano formatting: disabled[0m
+[0;32mI (1718) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1728) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1728) wifi:Init management short buffer num: 32[0m
+[0;32mI (1738) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1738) wifi:Init static rx buffecam_hal: NO-SOI - JPEG start marker missing[0m
+cam_halcam_hal: EV-EOF-OVF
+: NO-SOI - JPEG start marker missing
+r size: 1600
+[0;32mI (1758) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1758) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1758) wifi_init: rx ba win: 6[0m
+[0;32mI (1768) wifi_init: accept mbox: 6[0m
+[0;32mI (1768) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1768) wifi_init: udp mbox: 6[0m
+[0;32mI (1778) wifi_init: tcp mbox: 6[0m
+[0;32mI (1778) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1778) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1788) wifi_init: tcp mss: 1440[0m
+[0;32mI (1788) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1788) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1798) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (1868) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (1888) wifi:mode : sta (14:08:08:ac:67:64)[0m
+[0;32mI (1888) wifi:enable tsf[0m
+[0;32mI (1898) ESP32-CAM: WiFi started, connecting to Noobs...[0m
+[0;32mI (1908) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1908) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (5078) wifi:state: auth -> init (0x200)[0m
+[0;32mI (5088) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (5088) ESP32-CAM: WiFi disconnected, retrying...[0m
+[0;32mI (6898) ESP32-CAM: WiFi connected! Ready to send HTTP notifications to ESP32-C3[0m
+[0;32mI (6898) ESP32-CAM: ESP32-C3 should be at: 10.160.206.5:8080[0m
+[0;32mI (6898) ESP32-CAM: SNTP initialized[0m
+[0;32mI (6898) ESP32-CAM: Starting HTTP server on port 80[0m
+[0;32mI (6908) ESP32-CAM: HTTP server started[0m
+[0;32mI (6908) ESP32-CAM: === System Ready ===[0m
+[0;32mI (6908) ESP32-CAM: Open browser and go to ESP32-CAM IP address[0m
+[0;32mI (6918) ESP32-CAM: ========================[0m
+[0;32mI (7508) ESP32-CAM: WiFi disconnected, retrying...[0m
+[0;32mI (7548) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (7548) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (8678) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (8688) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (8708) wifi:connected with Noobs, aid = 2, channel 1, BW20, bssid = 12:ef:87:e0:31:53[0m
+[0;32mI (8708) wifi:security: WPA3-SAE, phy: bgn, rssi: -54[0m
+[0;32mI (8718) wifi:pm start, type: 1[0m
+
+[0;32mI (8718) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (8798) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (8798) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (9758) esp_netif_handlers: sta ip: 10.160.206.155, mask: 255.255.255.0, gw: 10.160.206.142[0m
+[0;32mI (9758) ESP32-CAM: Got IP: 10.160.206.155[0m
+[0;32mI (17688) wifi:<ba-add>idx:0 (ifx:0, 12:ef:87:e0:31:53), tid:0, ssn:16, winSize:64[0m
+[0;33mW (29538) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (29538) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (31638) ESP32-CAM: === CAPTURE REQUEST ===[0m
+[0;32mI (32638) ESP32-CAM: Flushing camera buffers...[0m
+[0;32mI (33598) ESP32-CAM: Flash ON[0m
+[0;32mI (33798) ESP32-CAM: Flash OFF - Captured 22588 bytes[0m
+[0;32mI (33798) ESP32-CAM: Connecting to SMTP server...[0m
+[0;32mI (35358) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (36558) ESP32-CAM: TLS connected to SMTP[0m
+[0;32mI (37008) ESP32-CAM: SMTP: 220 smtp.gmail.com ESMTP d2e1a72fcca58-7ff7af2ddf2sm9932774b3a.19 - gsmtp[0m
+
+[0;32mI (37988) wifi:<ba-add>idx:1 (ifx:0, 12:ef:87:e0:31:53), tid:1, ssn:16, winSize:64[0m
+[0;32mI (41678) ESP32-CAM: Email sent successfully! Total: 1[0m
+[0;32mI (41678) ESP32-CAM: Sending HTTP notification to ESP32-C3...[0m
+[0;32mI (41678) HTTP_NOTIFIER: Sending notification to: http://10.160.206.5:8080/notify[0m
+[0;32mI (41688) HTTP_NOTIFIER: JSON payload: {"event":"email_sent","photo_count":1,"time":"10:11:20","message":"Email #1 sent! Person detected at 10:11:20"}[0m
+[1;31mE (46718) esp-tls: [sock=58] select() timeout[0m
+[1;31mE (46718) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (46718) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (46718) HTTP_NOTIFIER: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (46728) HTTP_NOTIFIER: Make sure ESP32-C3 is online at 10.160.206.5[0m
+[0;33mW (46728) ESP32-CAM: ✗ Failed to send HTTP notification to 10.160.206.5[0m
+[0;33mW (46738) ESP32-CAM: Check: 1) ESP32-C3 is powered on, 2) IP address is correct, 3) WiFi connected[0m
+[0;32mI (46748) ESP32-CAM: === SUCCESS ===[0m
+[0;33mW (290808) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (290808) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;33mW (290878) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (290878) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (290878) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (303798) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (303798) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (305928) ESP32-CAM: === CAPTURE REQUEST ===[0m
+[0;32mI (306928) ESP32-CAM: Flushing camera buffers...[0m
+[0;32mI (307888) ESP32-CAM: Flash ON[0m
+[0;32mI (308088) ESP32-CAM: Flash OFF - Captured 20849 bytes[0m
+[0;32mI (308088) ESP32-CAM: Connecting to SMTP server...[0m
+[0;32mI (309668) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (310778) ESP32-CAM: TLS connected to SMTP[0m
+[0;32mI (311418) ESP32-CAM: SMTP: 220 smtp.gmail.com ESMTP d9443c01a7336-2a2f3c9b52asm92817995ad.45 - gsmtp[0m
+
+[0;32mI (315488) ESP32-CAM: Email sent successfully! Total: 2[0m
+[0;32mI (315488) ESP32-CAM: Sending HTTP notification to ESP32-C3...[0m
+[0;32mI (315488) HTTP_NOTIFIER: Sending notification to: http://10.160.206.5:8080/notify[0m
+[0;32mI (315498) HTTP_NOTIFIER: JSON payload: {"event":"email_sent","photo_count":2,"time":"10:15:54","message":"Email #2 sent! Person detected at 10:15:54"}[0m
+[0;32mI (316528) HTTP_NOTIFIER: Response: OK[0m
+[1;31mE (316538) HTTP_CLIENT: Incomplete chunked data received -1[0m
+[1;31mE (316538) HTTP_NOTIFIER: HTTP POST request failed: ESP_ERR_HTTP_INCOMPLETE_DATA[0m
+[0;33mW (316538) HTTP_NOTIFIER: Make sure ESP32-C3 is online at 10.160.206.5[0m
+[0;33mW (316548) ESP32-CAM: ✗ Failed to send HTTP notification to 10.160.206.5[0m
+[0;33mW (316548) ESP32-CAM: Check: 1) ESP32-C3 is powered on, 2) IP address is correct, 3) WiFi connected[0m
+[0;32mI (316568) ESP32-CAM: === SUCCESS ===[0m
+[0;33mW (335088) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (335088) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (337008) ESP32-CAM: === CAPTURE REQUEST ===[0m
+[0;32mI (338008) ESP32-CAM: Flushing camera buffers...[0m
+[0;32mI (338968) ESP32-CAM: Flash ON[0m
+[0;32mI (339168) ESP32-CAM: Flash OFF - Captured 19333 bytes[0m
+[0;32mI (339168) ESP32-CAM: Connecting to SMTP server...[0m
+[0;32mI (340718) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (341908) ESP32-CAM: TLS connected to SMTP[0m
+[0;32mI (341908) ESP32-CAM: SMTP: 220 smtp.gmail.com ESMTP d9443c01a7336-2a2f3c8279esm91450685ad.28 - gsmtp[0m
+
+[0;32mI (345588) ESP32-CAM: Email sent successfully! Total: 3[0m
+[0;32mI (345588) ESP32-CAM: Sending HTTP notification to ESP32-C3...[0m
+[0;32mI (345598) HTTP_NOTIFIER: Sending notification to: http://10.160.206.5:8080/notify[0m
+[0;32mI (345598) HTTP_NOTIFIER: JSON payload: {"event":"email_sent","photo_count":3,"time":"10:16:24","message":"Email #3 sent! Person detected at 10:16:24"}[0m
+[0;32mI (345818) HTTP_NOTIFIER: Response: OK[0m
+[1;31mE (345818) HTTP_CLIENT: Incomplete chunked data received -1[0m
+[1;31mE (345818) HTTP_NOTIFIER: HTTP POST request failed: ESP_ERR_HTTP_INCOMPLETE_DATA[0m
+[0;33mW (345818) HTTP_NOTIFIER: Make sure ESP32-C3 is online at 10.160.206.5[0m
+[0;33mW (345828) ESP32-CAM: ✗ Failed to send HTTP notification to 10.160.206.5[0m
+[0;33mW (345828) ESP32-CAM: Check: 1) ESP32-C3 is powered on, 2) IP address is correct, 3) WiFi connected[0m
+[0;32mI (345848) ESP32-CAM: === SUCCESS ===[0m
+[0;33mW (424868) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (424868) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (426908) ESP32-CAM: === CAPTURE REQUEST ===[0m
+[0;32mI (427908) ESP32-CAM: Flushing camera buffers...[0m
+[0;32mI (428868) ESP32-CAM: Flash ON[0m
+[0;32mI (429068) ESP32-CAM: Flash OFF - Captured 16057 bytes[0m
+[0;32mI (429068) ESP32-CAM: Connecting to SMTP server...[0m
+[0;32mI (430608) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (431818) ESP32-CAM: TLS connected to SMTP[0m
+[0;32mI (432488) ESP32-CAM: SMTP: 220 smtp.gmail.com ESMTP d2e1a72fcca58-7ff7e88cc1csm9966548b3a.65 - gsmtp[0m
+
+[0;32mI (436728) ESP32-CAM: Email sent successfully! Total: 4[0m
+[0;32mI (436728) ESP32-CAM: Sending HTTP notification to ESP32-C3...[0m
+[0;32mI (436728) HTTP_NOTIFIER: Sending notification to: http://10.160.206.5:8080/notify[0m
+[0;32mI (436738) HTTP_NOTIFIER: JSON payload: {"event":"email_sent","photo_count":4,"time":"10:17:55","message":"Email #4 sent! Person detected at 10:17:55"}[0m
+[0;32mI (436948) HTTP_NOTIFIER: Response: OK[0m
+[1;31mE (436948) HTTP_CLIENT: Incomplete chunked data received -1[0m
+[1;31mE (436958) HTTP_NOTIFIER: HTTP POST request failed: ESP_ERR_HTTP_INCOMPLETE_DATA[0m
+[0;33mW (436958) HTTP_NOTIFIER: Make sure ESP32-C3 is online at 10.160.206.5[0m
+[0;33mW (436958) ESP32-CAM: ✗ Failed to send HTTP notification to 10.160.206.5[0m
+[0;33mW (436968) ESP32-CAM: Check: 1) ESP32-C3 is powered on, 2) IP address is correct, 3) WiFi connected[0m
+[0;32mI (436978) ESP32-CAM: === SUCCESS ===[0m
+[0;33mW (580988) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (580988) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (583168) ESP32-CAM: === CAPTURE REQUEST ===[0m
+[0;32mI (584168) ESP32-CAM: Flushing camera buffers...[0m
+[0;32mI (585128) ESP32-CAM: Flash ON[0m
+[0;32mI (585328) ESP32-CAM: Flash OFF - Captured 22505 bytes[0m
+[0;32mI (585328) ESP32-CAM: Connecting to SMTP server...[0m
+[0;32mI (586878) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (587918) ESP32-CAM: TLS connected to SMTP[0m
+[0;32mI (588678) ESP32-CAM: SMTP: 220 smtp.gmail.com ESMTP d9443c01a7336-2a2f3d5f5dasm91823405ad.82 - gsmtp[0m
+
+[0;32mI (592858) ESP32-CAM: Email sent successfully! Total: 5[0m
+[0;32mI (592858) ESP32-CAM: Sending HTTP notification to ESP32-C3...[0m
+[0;32mI (592858) HTTP_NOTIFIER: Sending notification to: http://10.160.206.5:8080/notify[0m
+[0;32mI (592858) HTTP_NOTIFIER: JSON payload: {"event":"email_sent","photo_count":5,"time":"10:20:31","message":"Email #5 sent! Person detected at 10:20:31"}[0m
+[0;32mI (593018) HTTP_NOTIFIER: Response: OK[0m
+[1;31mE (593018) HTTP_CLIENT: Incomplete chunked data received -1[0m
+[1;31mE (593028) HTTP_NOTIFIER: HTTP POST request failed: ESP_ERR_HTTP_INCOMPLETE_DATA[0m
+[0;33mW (593028) HTTP_NOTIFIER: Make sure ESP32-C3 is online at 10.160.206.5[0m
+[0;33mW (593028) ESP32-CAM: ✗ Failed to send HTTP notification to 10.160.206.5[0m
+[0;33mW (593038) ESP32-CAM: Check: 1) ESP32-C3 is powered on, 2) IP address is correct, 3) WiFi connected[0m
+[0;32mI (593048) ESP32-CAM: === SUCCESS ===[0m
+[0;33mW (677498) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (677498) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (679638) ESP32-CAM: === CAPTURE REQUEST ===[0m
+[0;32mI (680638) ESP32-CAM: Flushing camera buffers...[0m
+[0;32mI (681598) ESP32-CAM: Flash ON[0m
+[0;32mI (681798) ESP32-CAM: Flash OFF - Captured 18961 bytes[0m
+[0;32mI (681798) ESP32-CAM: Connecting to SMTP server...[0m
+[0;32mI (683358) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (684638) ESP32-CAM: TLS connected to SMTP[0m
+[0;32mI (686168) ESP32-CAM: SMTP: 220 smtp.gmail.com ESMTP d9443c01a7336-2a2f3d77566sm94241225ad.97 - gsmtp[0m
+
+[0;32mI (693338) ESP32-CAM: Email sent successfully! Total: 6[0m
+[0;32mI (693338) ESP32-CAM: Sending HTTP notification to ESP32-C3...[0m
+[0;32mI (693338) HTTP_NOTIFIER: Sending notification to: http://10.160.206.5:8080/notify[0m
+[0;32mI (693348) HTTP_NOTIFIER: JSON payload: {"event":"email_sent","photo_count":6,"time":"10:22:11","message":"Email #6 sent! Person detected at 10:22:11"}[0m
+[0;32mI (693568) HTTP_NOTIFIER: Response: OK[0m
+[1;31mE (693568) HTTP_CLIENT: Incomplete chunked data received -1[0m
+[1;31mE (693568) HTTP_NOTIFIER: HTTP POST request failed: ESP_ERR_HTTP_INCOMPLETE_DATA[0m
+[0;33mW (693568) HTTP_NOTIFIER: Make sure ESP32-C3 is online at 10.160.206.5[0m
+[0;33mW (693578) ESP32-CAM: ✗ Failed to send HTTP notification to 10.160.206.5[0m
+[0;33mW (693588) ESP32-CAM: Check: 1) ESP32-C3 is powered on, 2) IP address is correct, 3) WiFi connected[0m
+[0;32mI (693598) ESP32-CAM: === SUCCESS ===[0m
+[0;33mW (850188) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (850188) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;33mW (850268) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (850268) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (850268) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (924428) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (924428) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (926598) ESP32-CAM: === CAPTURE REQUEST ===[0m
+[0;32mI (927598) ESP32-CAM: Flushing camera buffers...[0m
+cam_hal: NO-EOI - JPEG end marker missing
+[0;32mI (928638) ESP32-CAM: Flash ON[0m
+[0;32mI (928838) ESP32-CAM: Flash OFF - Captured 29103 bytes[0m
+[0;32mI (928838) ESP32-CAM: Connecting to SMTP server...[0m
+[0;32mI (930108) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (931308) ESP32-CAM: TLS connected to SMTP[0m
+[0;32mI (931318) ESP32-CAM: SMTP: 220 smtp.gmail.com ESMTP d9443c01a7336-2a2f3c667cesm95109225ad.18 - gsmtp[0m
+
+[0;32mI (935398) ESP32-CAM: Email sent successfully! Total: 7[0m
+[0;32mI (935408) ESP32-CAM: Sending HTTP notification to ESP32-C3...[0m
+[0;32mI (935408) HTTP_NOTIFIER: Sending notification to: http://10.160.206.5:8080/notify[0m
+[0;32mI (935408) HTTP_NOTIFIER: JSON payload: {"event":"email_sent","photo_count":7,"time":"10:26:14","message":"Email #7 sent! Person detected at 10:26:14"}[0m
+[0;32mI (935648) HTTP_NOTIFIER: Response: OK[0m
+[1;31mE (935648) HTTP_CLIENT: Incomplete chunked data received -1[0m
+[1;31mE (935648) HTTP_NOTIFIER: HTTP POST request failed: ESP_ERR_HTTP_INCOMPLETE_DATA[0m
+[0;33mW (935648) HTTP_NOTIFIER: Make sure ESP32-C3 is online at 10.160.206.5[0m
+[0;33mW (935658) ESP32-CAM: ✗ Failed to send HTTP notification to 10.160.206.5[0m
+[0;33mW (935668) ESP32-CAM: Check: 1) ESP32-C3 is powered on, 2) IP address is correct, 3) WiFi connected[0m
+[0;32mI (935678) ESP32-CAM: === SUCCESS ===[0m
+[0;33mW (1021478) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (1021478) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (1023668) ESP32-CAM: === CAPTURE REQUEST ===[0m
+[0;32mI (1024668) ESP32-CAM: Flushing camera buffers...[0m
+[0;32mI (1025628) ESP32-CAM: Flash ON[0m
+[0;32mI (1025828) ESP32-CAM: Flash OFF - Captured 27130 bytes[0m
+[0;32mI (1025828) ESP32-CAM: Connecting to SMTP server...[0m
+[0;32mI (1027198) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (1028228) ESP32-CAM: TLS connected to SMTP[0m
+[0;32mI (1028578) ESP32-CAM: SMTP: 220 smtp.gmail.com ESMTP d2e1a72fcca58-7ff7b12a7dasm10182872b3a.22 - gsmtp[0m
+���?���?���?���?
+[0;32mI (1032888) ESP32-CAM: Email sent successfully! Total: 8[0m
+[0;32mI (1032888) ESP32-CAM: Sending HTTP notification to ESP32-C3...[0m
+[0;32mI (1032888) HTTP_NOTIFIER: Sending notification to: http://10.160.206.5:8080/notify[0m
+[0;32mI (1032888) HTTP_NOTIFIER: JSON payload: {"event":"email_sent","photo_count":8,"time":"10:27:51","message":"Email #8 sent! Person detected at 10:27:51"}[0m
+[0;32mI (1033138) HTTP_NOTIFIER: Response: OK[0m
+[1;31mE (1033148) HTTP_CLIENT: Incomplete chunked data received -1[0m
+[1;31mE (1033158) HTTP_NOTIFIER: HTTP POST request failed: ESP_ERR_HTTP_INCOMPLETE_DATA[0m
+[0;33mW (1033158) HTTP_NOTIFIER: Make sure ESP32-C3 is online at 10.160.206.5[0m
+[0;33mW (1033158) ESP32-CAM: ✗ Failed to send HTTP notification to 10.160.206.5[0m
+[0;33mW (1033168) ESP32-CAM: Check: 1) ESP32-C3 is powered on, 2) IP address is correct, 3) WiFi connected[0m
+[0;32mI (1033178) ESP32-CAM: === SUCCESS ===[0m
+[0;33mW (1100288) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (1100288) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (1102528) ESP32-CAM: === CAPTURE REQUEST ===[0m
+[0;32mI (1103528) ESP32-CAM: Flushing camera buffers...[0m
+[0;32mI (1104488) ESP32-CAM: Flash ON[0m
+[0;32mI (1104688) ESP32-CAM: Flash OFF - Captured 31576 bytes[0m
+[0;32mI (1104688) ESP32-CAM: Connecting to SMTP server...[0m
+[0;32mI (1106538) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (1107648) ESP32-CAM: TLS connected to SMTP[0m
+[0;32mI (1108348) ESP32-CAM: SMTP: 220 smtp.gmail.com ESMTP d2e1a72fcca58-7ff7e0a19d8sm9987202b3a.42 - gsmtp[0m
+
+[0;32mI (1112548) ESP32-CAM: Email sent successfully! Total: 9[0m
+[0;32mI (1112548) ESP32-CAM: Sending HTTP notification to ESP32-C3...[0m
+[0;32mI (1112548) HTTP_NOTIFIER: Sending notification to: http://10.160.206.5:8080/notify[0m
+[0;32mI (1112558) HTTP_NOTIFIER: JSON payload: {"event":"email_sent","photo_count":9,"time":"10:29:11","message":"Email #9 sent! Person detected at 10:29:11"}[0m
+[0;32mI (1112768) HTTP_NOTIFIER: Response: OK[0m
+[1;31mE (1112768) HTTP_CLIENT: Incomplete chunked data received -1[0m
+[1;31mE (1112768) HTTP_NOTIFIER: HTTP POST request failed: ESP_ERR_HTTP_INCOMPLETE_DATA[0m
+[0;33mW (1112768) HTTP_NOTIFIER: Make sure ESP32-C3 is online at 10.160.206.5[0m
+[0;33mW (1112778) ESP32-CAM: ✗ Failed to send HTTP notification to 10.160.206.5[0m
+[0;33mW (1112778) ESP32-CAM: Check: 1) ESP32-C3 is powered on, 2) IP address is correct, 3) WiFi connected[0m
+[0;32mI (1112798) ESP32-CAM: === SUCCESS ===[0m
+[0;33mW (1159888) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (1159888) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (1161928) ESP32-CAM: === CAPTURE REQUEST ===[0m
+[0;32mI (1162928) ESP32-CAM: Flushing camera buffers...[0m
+[0;32mI (1163888) ESP32-CAM: Flash ON[0m
+[0;32mI (1164088) ESP32-CAM: Flash OFF - Captured 15292 bytes[0m
+[0;32mI (1164088) ESP32-CAM: Connecting to SMTP server...[0m
+[0;32mI (1165648) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (1166818) ESP32-CAM: TLS connected to SMTP[0m
+[0;32mI (1167428) ESP32-CAM: SMTP: 220 smtp.gmail.com ESMTP d2e1a72fcca58-7ff7e48f30bsm10002955b3a.48 - gsmtp[0m
+���?���?���?���?
+[0;32mI (1171328) ESP32-CAM: Email sent successfully! Total: 10[0m
+[0;32mI (1171328) ESP32-CAM: Sending HTTP notification to ESP32-C3...[0m
+[0;32mI (1171328) HTTP_NOTIFIER: Sending notification to: http://10.160.206.5:8080/notify[0m
+[0;32mI (1171338) HTTP_NOTIFIER: JSON payload: {"event":"email_sent","photo_count":10,"time":"10:30:09","message":"Email #10 sent! Person detected at 10:30:09"}[0m
+[0;32mI (1171538) HTTP_NOTIFIER: Response: OK[0m
+[1;31mE (1171538) HTTP_CLIENT: Incomplete chunked data received -1[0m
+[1;31mE (1171538) HTTP_NOTIFIER: HTTP POST request failed: ESP_ERR_HTTP_INCOMPLETE_DATA[0m
+[0;33mW (1171548) HTTP_NOTIFIER: Make sure ESP32-C3 is online at 10.160.206.5[0m
+[0;33mW (1171548) ESP32-CAM: ✗ Failed to send HTTP notification to 10.160.206.5[0m
+[0;33mW (1171558) ESP32-CAM: Check: 1) ESP32-C3 is powered on, 2) IP address is correct, 3) WiFi connected[0m
+[0;32mI (1171568) ESP32-CAM: === SUCCESS ===[0m
+[0;33mW (1189958) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (1189958) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (1192028) ESP32-CAM: === CAPTURE REQUEST ===[0m
+[0;32mI (1193028) ESP32-CAM: Flushing camera buffers...[0m
+[0;32mI (1193988) ESP32-CAM: Flash ON[0m
+[0;32mI (1194188) ESP32-CAM: Flash OFF - Captured 26744 bytes[0m
+[0;32mI (1194188) ESP32-CAM: Connecting to SMTP server...[0m
+[0;32mI (1195758) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (1196928) ESP32-CAM: TLS connected to SMTP[0m
+[0;32mI (1197548) ESP32-CAM: SMTP: 220 smtp.gmail.com ESMTP 41be03b00d2f7-c1e7c147943sm8978286a12.26 - gsmtp[0m
+
+[0;32mI (1205318) ESP32-CAM: Email sent successfully! Total: 11[0m
+[0;32mI (1205328) ESP32-CAM: Sending HTTP notification to ESP32-C3...[0m
+[0;32mI (1205328) HTTP_NOTIFIER: Sending notification to: http://10.160.206.5:8080/notify[0m
+[0;32mI (1205328) HTTP_NOTIFIER: JSON payload: {"event":"email_sent","photo_count":11,"time":"10:30:43","message":"Email #11 sent! Person detected at 10:30:43"}[0m
+[0;32mI (1206138) HTTP_NOTIFIER: Response: OK[0m
+[1;31mE (1206138) HTTP_CLIENT: Incomplete chunked data received -1[0m
+[1;31mE (1206138) HTTP_NOTIFIER: HTTP POST request failed: ESP_ERR_HTTP_INCOMPLETE_DATA[0m
+[0;33mW (1206148) HTTP_NOTIFIER: Make sure ESP32-C3 is online at 10.160.206.5[0m
+[0;33mW (1206148) ESP32-CAM: ✗ Failed to send HTTP notification to 10.160.206.5[0m
+[0;33mW (1206158) ESP32-CAM: Check: 1) ESP32-C3 is powered on, 2) IP address is correct, 3) WiFi connected[0m
+[0;32mI (1206168) ESP32-CAM: === SUCCESS ===[0m
+[0;33mW (1255688) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (1255698) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (1257748) ESP32-CAM: === CAPTURE REQUEST ===[0m
+[0;32mI (1258748) ESP32-CAM: Flushing camera buffers...[0m
+[0;32mI (1259708) ESP32-CAM: Flash ON[0m
+[0;32mI (1259908) ESP32-CAM: Flash OFF - Captured 27171 bytes[0m
+[0;32mI (1259908) ESP32-CAM: Connecting to SMTP server...[0m
+[0;32mI (1261308) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (1262478) ESP32-CAM: TLS connected to SMTP[0m
+[0;32mI (1262478) ESP32-CAM: SMTP: 220 smtp.gmail.com ESMTP 41be03b00d2f7-c1e7961fbb9sm8723329a12.2 - gsmtp[0m
+
+[0;32mI (1267388) ESP32-CAM: Email sent successfully! Total: 12[0m
+[0;32mI (1267388) ESP32-CAM: Sending HTTP notification to ESP32-C3...[0m
+[0;32mI (1267388) HTTP_NOTIFIER: Sending notification to: http://10.160.206.5:8080/notify[0m
+[0;32mI (1267388) HTTP_NOTIFIER: JSON payload: {"event":"email_sent","photo_count":12,"time":"10:31:46","message":"Email #12 sent! Person detected at 10:31:46"}[0m
+[0;32mI (1268208) HTTP_NOTIFIER: Response: OK[0m
+[1;31mE (1268208) HTTP_CLIENT: Incomplete chunked data received -1[0m
+[1;31mE (1268208) HTTP_NOTIFIER: HTTP POST request failed: ESP_ERR_HTTP_INCOMPLETE_DATA[0m
+[0;33mW (1268208) HTTP_NOTIFIER: Make sure ESP32-C3 is online at 10.160.206.5[0m
+[0;33mW (1268218) ESP32-CAM: ✗ Failed to send HTTP notification to 10.160.206.5[0m
+[0;33mW (1268218) ESP32-CAM: Check: 1) ESP32-C3 is powered on, 2) IP address is correct, 3) WiFi connected[0m
+[0;32mI (1268238) ESP32-CAM: === SUCCESS ===[0m
+[0;33mW (1326348) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (1326348) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (1328468) ESP32-CAM: === CAPTURE REQUEST ===[0m
+[0;32mI (1329468) ESP32-CAM: Flushing 
