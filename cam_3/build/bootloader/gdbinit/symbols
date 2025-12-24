@@ -22,4 +22,4 @@ set confirm off
 set confirm on
 
 # Load application symbols
-file D:/ESPproject/test_cam_3/build/bootloader/bootloader.elf
+file D:/ESPproject/Thiet_bi_giam_sat/cam_3/build/bootloader/bootloader.elf

@@ -18,8 +18,8 @@ end
 
 # Load bootloader symbols
 set confirm off
-    add-symbol-file D:/ESPproject/test_cam_3/build/bootloader/bootloader.elf
+    add-symbol-file D:/ESPproject/Thiet_bi_giam_sat/cam_3/build/bootloader/bootloader.elf
 set confirm on
 
 # Load application symbols
-file D:/ESPproject/test_cam_3/build/test_cam_3.elf
+file D:/ESPproject/Thiet_bi_giam_sat/cam_3/build/test_cam_3.elf

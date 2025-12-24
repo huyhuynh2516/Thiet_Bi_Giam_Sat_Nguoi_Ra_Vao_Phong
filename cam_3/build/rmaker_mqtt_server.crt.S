@@ -1,4 +1,4 @@
-/* * Data converted from D:/ESPproject/test_cam_3/managed_components/espressif__esp_rainmaker/server_certs/rmaker_mqtt_server.crt
+/* * Data converted from D:/ESPproject/Thiet_bi_giam_sat/cam_3/managed_components/espressif__esp_rainmaker/server_certs/rmaker_mqtt_server.crt
  * (null byte appended)
  */
 .data

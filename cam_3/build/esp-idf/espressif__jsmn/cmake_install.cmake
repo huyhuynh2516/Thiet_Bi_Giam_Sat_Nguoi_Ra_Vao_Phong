@@ -1,4 +1,4 @@
-# Install script for directory: D:/ESPproject/test_cam_3/managed_components/espressif__jsmn
+# Install script for directory: D:/ESPproject/Thiet_bi_giam_sat/cam_3/managed_components/espressif__jsmn
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

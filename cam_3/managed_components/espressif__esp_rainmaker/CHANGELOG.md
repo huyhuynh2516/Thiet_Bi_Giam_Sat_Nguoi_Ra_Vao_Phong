@@ -1,5 +1,34 @@
 # Changelog
 
+## 1.8.7
+
+### Bug Fixes
+- If assisted claiming was already performed before calling `esp_rmaker_start()`,
+  the firmware was stalling with an incorrect print saying that the Node connected to network
+  without claiming.
+
+## 1.8.6
+
+### New Feature
+
+- Added Groups service to enable direct MQTT communication between nodes and clients (phone apps/controllers).
+    - Setting group_id via the Groups service routes local param updates to group-specific topics
+      (`node/<node_id>/params/local/<group_id>`) for lower latency.
+    - Also added `esp_rmaker_publish_direct()` API to publish messages on `node/<node_id>/direct/params/local/<group_id>`
+      for direct client-to-node communication, bypassing cloud processing for reduced cost and latency.
+    - Clients can also publish param updates directly to `node/<node_id>/params/remote/<group_id>` instead of
+      using the set params API.
+
+## 1.8.5
+
+### Changes
+
+- Assisted claiming is now the default for all supported platforms (requires Bluetooth enabled and not ESP32S2).
+  Previously, it was only the default for ESP32. To revert to self claiming, set `CONFIG_ESP_RMAKER_SELF_CLAIM=y` in menuconfig.
+- Challenge response based user-node mapping is now enabled by default. This replaces the traditional user-node mapping flow.
+  To disable it, set `CONFIG_ESP_RMAKER_ENABLE_CHALLENGE_RESPONSE=n` in menuconfig.
+  Note that challenge response requires the node to be claimed before it can be used.
+
 ## 1.8.4
 
 ### New Feature
