@@ -1,4 +1,4 @@
-/* * Data converted from D:/ESPproject/test_cam_3/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from D:/ESPproject/Thiet_bi_giam_sat/cam_3/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 #if !defined (__APPLE__) && !defined (__linux__)

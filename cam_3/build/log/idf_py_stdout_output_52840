@@ -1,0 +1,278 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:5172
+load:0x40078000,len:15232
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3740
+entry 0x4008061c
+[0;32mI (31) boot: ESP-IDF v5.4.3 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 24 2025 13:53:29[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2d848h (186440) map[0m
+[0;32mI (154) esp_image: segment 1: paddr=0003d870 vaddr=3ffb0000 size=027a8h ( 10152) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=a0b8ch (658316) map[0m
+[0;32mI (383) esp_image: segment 3: paddr=000e0bb4 vaddr=3ffb27a8 size=03a1ch ( 14876) load[0m
+[0;32mI (389) esp_image: segment 4: paddr=000e45d8 vaddr=40080000 size=18c44h (101444) load[0m
+[0;32mI (429) esp_image: segment 5: paddr=000fd224 vaddr=50000000 size=0001ch (    28) load[0m
+[0;32mI (441) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (441) boot: Disabling RNG early entropy source...[0m
+[0;32mI (452) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (452) esp_psram: Found 4MB PSRAM device[0m
+[0;32mI (452) esp_psram: Speed: 40MHz[0m
+[0;32mI (452) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;32mI (459) cpu_start: Multicore app[0m
+[0;32mI (1353) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1361) cpu_start: Pro cpu start user code[0m
+[0;32mI (1361) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1361) app_init: Application information:[0m
+[0;32mI (1361) app_init: Project name:     test_cam_3[0m
+[0;32mI (1365) app_init: App version:      4b0a3a2-dirty[0m
+[0;32mI (1370) app_init: Compile time:     Dec 24 2025 13:53:21[0m
+[0;32mI (1375) app_init: ELF file SHA256:  96b2c95ca...[0m
+[0;32mI (1379) app_init: ESP-IDF:          v5.4.3[0m
+[0;32mI (1383) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1387) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (1391) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (1395) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1401) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1407) heap_init: At 3FFBB200 len 00024E00 (147 KiB): DRAM[0m
+[0;32mI (1412) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1417) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1423) heap_init: At 40098C44 len 000073BC (28 KiB): IRAM[0m
+[0;32mI (1429) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (1436) spi_flash: detected chip: generic[0m
+[0;32mI (1439) spi_flash: flash io: dio[0m
+[0;32mI (1443) main_task: Started on CPU0[0m
+[0;32mI (1453) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1453) main_task: Calling app_main()[0m
+[0;32mI (1453) ESP32-CAM: [0m
+=== ESP32-CAM Pure ESP-IDF Starting ===
+[0;32mI (1493) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (1493) cam_hal: cam init ok[0m
+[0;32mI (1493) sccb-ng: pin_sda 26 pin_scl 27[0m
+[0;32mI (1493) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1493) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1533) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1533) camera: Detected OV2640 camera[0m
+[0;32mI (1533) camera: Detected camera at address=0x30[0m
+[0;32mI (1603) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (1603) cam_hal: buffer_size: 32768, half_buffer_size: 4096, node_buffer_size: 2048, node_cnt: 16, total_cnt: 23[0m
+[0;32mI (1613) cam_hal: Allocating 96000 Byte frame buffer in PSRAM[0m
+[0;32mI (1613) cam_hal: cam config ok[0m
+[0;32mI (1613) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+[0;32mI (1683) ESP32-CAM: Camera initialized[0m
+[0;32mI (1683) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1683) ESP32-CAM: Flash LED initialized[0m
+[0;32mI (1703) wifi:wifi driver task: 3ffd46c8, prio:23, stack:6656, core=0[0m
+[0;32mI (1713) wifi:wifi firmware version: e8ce6e2[0m
+[0;32mI (1713) wifi:wifi certification version: v7.0[0m
+[0;32mI (1713) wifi:config NVS flash: enabled[0m
+[0;32mI (1713) wifi:config nano formatting: disabled[0m
+[0;32mI (1713) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1723) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1723) wifi:Init management short buffer num: 32[0m
+[0;32mI (1733) wifi:Init dynamic tx buffer num:cam_hal: EV-EOF-OVF[0m
+ 32
+[0;32mI (1733) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1743) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1743) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1753) wifi_init: rx ba win: 6[0m
+[0;32mI (1753) wifi_init: accept mbox: 6[0m
+[0;32mI (1753) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1753) wifi_init: udp mbox: 6[0m
+[0;32mI (1763) wifi_init: tcp mbox: 6[0m
+[0;32mI (1763) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1763) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1773) wifi_init: tcp mss: 1440[0m
+[0;32mI (1773) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1773) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1783) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (1863) wifi:mode : sta (14:08:08:ac:67:64)[0m
+[0;32mI (1863) wifi:enable tsf[0m
+[0;32mI (1863) ESP32-CAM: WiFi started, connecting to Noobs...[0m
+[0;32mI (1873) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1873) wifi:state: init -> auth (0xb0)[0m
+cam_hal: NO-SOI - JPEG start marker missing
+cam_hal: NO-SOI - JPEG start marker missing
+[0;32mI (5043) wifi:state: auth -> init (0x200)[0m
+[0;32mI (5053) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (5053) ESP32-CAM: WiFi disconnected, retrying...[0m
+[0;32mI (6863) ESP32-CAM: WiFi connected! Ready to send HTTP notifications to ESP32-C3[0m
+[0;32mI (6863) ESP32-CAM: ESP32-C3 should be at: 10.160.206.5:8080[0m
+[0;32mI (6863) ESP32-CAM: SNTP initialized[0m
+[0;32mI (6863) ESP32-CAM: Starting HTTP server on port 80[0m
+[0;32mI (6873) ESP32-CAM: HTTP server started[0m
+[0;32mI (6873) ESP32-CAM: === System Ready ===[0m
+[0;32mI (6873) ESP32-CAM: Open browser and go to ESP32-CAM IP address[0m
+[0;32mI (6883) ESP32-CAM: ========================[0m
+[0;32mI (7473) ESP32-CAM: WiFi disconnected, retrying...[0m
+[0;32mI (7483) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (7483) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (8643) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (8653) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (8673) wifi:connected with Noobs, aid = 1, channel 1, BW20, bssid = 12:ef:87:e0:31:53[0m
+[0;32mI (8673) wifi:security: WPA3-SAE, phy: bgn, rssi: -41[0m
+[0;32mI (8683) wifi:pm start, type: 1[0m
+
+[0;32mI (8683) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (8723) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (8723) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (9713) esp_netif_handlers: sta ip: 10.160.206.155, mask: 255.255.255.0, gw: 10.160.206.142[0m
+[0;32mI (9713) ESP32-CAM: Got IP: 10.160.206.155[0m
+[0;32mI (20503) wifi:<ba-add>idx:0 (ifx:0, 12:ef:87:e0:31:53), tid:0, ssn:16, winSize:64[0m
+[0;33mW (31673) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (31673) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (33833) ESP32-CAM: === CAPTURE REQUEST ===[0m
+[0;32mI (34833) ESP32-CAM: Flushing camera buffers...[0m
+[0;32mI (35793) ESP32-CAM: Flash ON[0m
+[0;32mI (35993) ESP32-CAM: Flash OFF - Captured 42940 bytes[0m
+[0;32mI (35993) ESP32-CAM: Connecting to SMTP server...[0m
+[0;32mI (37333) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (38373) ESP32-CAM: TLS connected to SMTP[0m
+[0;32mI (39133) ESP32-CAM: SMTP: 220 smtp.gmail.com ESMTP 41be03b00d2f7-c1e79a1778esm13659326a12.13 - gsmtp[0m
+|��?���?���?���?
+[0;32mI (39813) wifi:<ba-add>idx:1 (ifx:0, 12:ef:87:e0:31:53), tid:1, ssn:16, winSize:64[0m
+[0;32mI (43853) ESP32-CAM: Email sent successfully! Total: 1[0m
+[0;32mI (43853) ESP32-CAM: Sending HTTP notification to ESP32-C3...[0m
+[0;32mI (43853) HTTP_NOTIFIER: [0m
+[0;32mI (43853) HTTP_NOTIFIER: ╔════════════════════════════════════════════════╗[0m
+[0;32mI (43873) HTTP_NOTIFIER: ║  🚨 SENDING BUZZER TRIGGER TO ESP32-C3       ║[0m
+[0;32mI (43873) HTTP_NOTIFIER: ╚════════════════════════════════════════════════╝[0m
+[0;32mI (43893) HTTP_NOTIFIER: Target: http://10.160.206.5:8080/buzzer[0m
+[0;32mI (43893) HTTP_NOTIFIER: Photo count: 1[0m
+[0;32mI (43903) HTTP_NOTIFIER: Message: Email #1 sent! Person detected at 06:55:01[0m
+[0;32mI (43913) HTTP_NOTIFIER: Sending POST request...[0m
+[0;32mI (43913) HTTP_NOTIFIER: Body: {"source":"ESP32-CAM","photo_count":1,"message":"Email #1 sent! Person detected at 06:55:01"}[0m
+[1;31mE (58933) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (58933) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (58933) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (58933) HTTP_NOTIFIER: [0m
+[1;31mE (58933) HTTP_NOTIFIER: ╔════════════════════════════════════════════════╗[0m
+[1;31mE (58953) HTTP_NOTIFIER: ║  ❌ HTTP REQUEST FAILED                       ║[0m
+[1;31mE (58953) HTTP_NOTIFIER: ╚════════════════════════════════════════════════╝[0m
+[1;31mE (58973) HTTP_NOTIFIER: Error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (58973) HTTP_NOTIFIER: [0m
+[1;31mE (58983) HTTP_NOTIFIER: ⚠️  POSSIBLE CAUSES:[0m
+[1;31mE (58983) HTTP_NOTIFIER:    1. ESP32-C3 is not powered on[0m
+[1;31mE (58993) HTTP_NOTIFIER:    2. Wrong IP address: 10.160.206.5[0m
+[1;31mE (58993) HTTP_NOTIFIER:    3. ESP32-C3 not connected to WiFi[0m
+[1;31mE (59003) HTTP_NOTIFIER:    4. Different WiFi network[0m
+[1;31mE (59003) HTTP_NOTIFIER:    5. Firewall blocking port 8080[0m
+[1;31mE (59013) HTTP_NOTIFIER: [0m
+[1;31mE (59013) HTTP_NOTIFIER: 🔍 DEBUG STEPS:[0m
+[1;31mE (59013) HTTP_NOTIFIER:    1. Check ESP32-C3 serial monitor for IP address[0m
+[1;31mE (59023) HTTP_NOTIFIER:    2. Update ESP32C3_IP in main code[0m
+[1;31mE (59033) HTTP_NOTIFIER:    3. Test with: curl http://10.160.206.5:8080/buzzer[0m
+[1;31mE (59033) HTTP_NOTIFIER: [0m
+[0;33mW (59033) ESP32-CAM: ✗ Failed to send HTTP notification to 10.160.206.5[0m
+[0;33mW (59043) ESP32-CAM: Check: 1) ESP32-C3 is powered on, 2) IP address is correct, 3) WiFi connected[0m
+[0;32mI (59053) ESP32-CAM: === SUCCESS ===[0m
+[0;33mW (59533) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (59533) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;33mW (88213) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (88213) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (90333) ESP32-CAM: === CAPTURE REQUEST ===[0m
+[0;32mI (91333) ESP32-CAM: Flushing camera buffers...[0m
+[0;32mI (92293) ESP32-CAM: Flash ON[0m
+[0;32mI (92493) ESP32-CAM: Flash OFF - Captured 44380 bytes[0m
+[0;32mI (92493) ESP32-CAM: Connecting to SMTP server...[0m
+[0;32mI (93883) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (94893) ESP32-CAM: TLS connected to SMTP[0m
+[0;32mI (95023) ESP32-CAM: SMTP: 220 smtp.gmail.com ESMTP 98e67ed59e1d1-34e769d0106sm7094083a91.0 - gsmtp[0m
+
+[0;32mI (100173) ESP32-CAM: Email sent successfully! Total: 2[0m
+[0;32mI (100173) ESP32-CAM: Sending HTTP notification to ESP32-C3...[0m
+[0;32mI (100173) HTTP_NOTIFIER: [0m
+[0;32mI (100183) HTTP_NOTIFIER: ╔════════════════════════════════════════════════╗[0m
+[0;32mI (100193) HTTP_NOTIFIER: ║  🚨 SENDING BUZZER TRIGGER TO ESP32-C3       ║[0m
+[0;32mI (100203) HTTP_NOTIFIER: ╚════════════════════════════════════════════════╝[0m
+[0;32mI (100213) HTTP_NOTIFIER: Target: http://10.160.206.5:8080/buzzer[0m
+[0;32mI (100223) HTTP_NOTIFIER: Photo count: 2[0m
+[0;32mI (100223) HTTP_NOTIFIER: Message: Email #2 sent! Person detected at 06:55:57[0m
+[0;32mI (100233) HTTP_NOTIFIER: Sending POST request...[0m
+[0;32mI (100233) HTTP_NOTIFIER: Body: {"source":"ESP32-CAM","photo_count":2,"message":"Email #2 sent! Person detected at 06:55:57"}[0m
+[0;32mI (105693) HTTP_NOTIFIER: Response from ESP32-C3: OK - Buzzer Activated[0m
+[1;31mE (105703) HTTP_CLIENT: Incomplete chunked data received -1[0m
+[1;31mE (105703) HTTP_NOTIFIER: [0m
+[1;31mE (105703) HTTP_NOTIFIER: ╔════════════════════════════════════════════════╗[0m
+[1;31mE (105713) HTTP_NOTIFIER: ║  ❌ HTTP REQUEST FAILED                       ║[0m
+[1;31mE (105723) HTTP_NOTIFIER: ╚════════════════════════════════════════════════╝[0m
+[1;31mE (105733) HTTP_NOTIFIER: Error: ESP_ERR_HTTP_INCOMPLETE_DATA[0m
+[1;31mE (105743) HTTP_NOTIFIER: [0m
+[1;31mE (105743) HTTP_NOTIFIER: ⚠️  POSSIBLE CAUSES:[0m
+[1;31mE (105753) HTTP_NOTIFIER:    1. ESP32-C3 is not powered on[0m
+[1;31mE (105753) HTTP_NOTIFIER:    2. Wrong IP address: 10.160.206.5[0m
+[1;31mE (105763) HTTP_NOTIFIER:    3. ESP32-C3 not connected to WiFi[0m
+[1;31mE (105763) HTTP_NOTIFIER:    4. Different WiFi network[0m
+[1;31mE (105773) HTTP_NOTIFIER:    5. Firewall blocking port 8080[0m
+[1;31mE (105773) HTTP_NOTIFIER: [0m
+[1;31mE (105783) HTTP_NOTIFIER: 🔍 DEBUG STEPS:[0m
+[1;31mE (105783) HTTP_NOTIFIER:    1. Check ESP32-C3 serial monitor for IP address[0m
+[1;31mE (105793) HTTP_NOTIFIER:    2. Update ESP32C3_IP in main code[0m
+[1;31mE (105793) HTTP_NOTIFIER:    3. Test with: curl http://10.160.206.5:8080/buzzer[0m
+[1;31mE (105803) HTTP_NOTIFIER: [0m
+[0;33mW (105803) ESP32-CAM: ✗ Failed to send HTTP notification to 10.160.206.5[0m
+[0;33mW (105813) ESP32-CAM: Check: 1) ESP32-C3 is powered on, 2) IP address is correct, 3) WiFi connected[0m
+[0;32mI (105823) ESP32-CAM: === SUCCESS ===[0m
+cam_hal: NO-EOI - JPEG end marker missing
+[0;33mW (136063) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (136063) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (138073) ESP32-CAM: === CAPTURE REQUEST ===[0m
+[0;32mI (139073) ESP32-CAM: Flushing camera buffers...[0m
+[0;32mI (140183) ESP32-CAM: Flash ON[0m
+[0;32mI (140463) ESP32-CAM: Flash OFF - Captured 44835 bytes[0m
+[0;32mI (140463) ESP32-CAM: Connecting to SMTP server...[0m
+[0;32mI (142013) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (143173) ESP32-CAM: TLS connected to SMTP[0m
+[0;32mI (143783) ESP32-CAM: SMTP: 220 smtp.gmail.com ESMTP 98e67ed59e1d1-34e769c347asm8952162a91.0 - gsmtp[0m
+
+[0;32mI (148093) ESP32-CAM: Email sent successfully! Total: 3[0m
+[0;32mI (148093) ESP32-CAM: Sending HTTP notification to ESP32-C3...[0m
+[0;32mI (148093) HTTP_NOTIFIER: [0m
+[0;32mI (148093) HTTP_NOTIFIER: ╔════════════════════════════════════════════════╗[0m
+[0;32mI (148113) HTTP_NOTIFIER: ║  🚨 SENDING BUZZER TRIGGER TO ESP32-C3       ║[0m
+[0;32mI (148113) HTTP_NOTIFIER: ╚════════════════════════════════════════════════╝[0m
+[0;32mI (148133) HTTP_NOTIFIER: Target: http://10.160.206.5:8080/buzzer[0m
+[0;32mI (148143) HTTP_NOTIFIER: Photo count: 3[0m
+[0;32mI (148143) HTTP_NOTIFIER: Message: Email #3 sent! Person detected at 06:56:45[0m
+[0;32mI (148153) HTTP_NOTIFIER: Sending POST request...[0m
+[0;32mI (148153) HTTP_NOTIFIER: Body: {"source":"ESP32-CAM","photo_count":3,"message":"Email #3 sent! Person detected at 06:56:45"}[0m
+[0;32mI (148503) HTTP_NOTIFIER: Response from ESP32-C3: OK - Buzzer Activated[0m
+[1;31mE (148503) HTTP_CLIENT: Incomplete chunked data received -1[0m
+[1;31mE (148503) HTTP_NOTIFIER: [0m
+[1;31mE (148503) HTTP_NOTIFIER: ╔════════════════════════════════════════════════╗[0m
+[1;31mE (148513) HTTP_NOTIFIER: ║  ❌ HTTP REQUEST FAILED                       ║[0m
+[1;31mE (148523) HTTP_NOTIFIER: ╚════════════════════════════════════════════════╝[0m
+[1;31mE (148543) HTTP_NOTIFIER: Error: ESP_ERR_HTTP_INCOMPLETE_DATA[0m
+[1;31mE (148543) HTTP_NOTIFIER: [0m
+[1;31mE (148543) HTTP_NOTIFIER: ⚠️  POSSIBLE CAUSES:[0m
+[1;31mE (148553) HTTP_NOTIFIER:    1. ESP32-C3 is not powered on[0m
+[1;31mE (148563) HTTP_NOTIFIER:    2. Wrong IP address: 10.160.206.5[0m
+[1;31mE (148563) HTTP_NOTIFIER:    3. ESP32-C3 not connected to WiFi[0m
+[1;31mE (148573) HTTP_NOTIFIER:    4. Different WiFi network[0m
+[1;31mE (148573) HTTP_NOTIFIER:    5. Firewall blocking port 8080[0m
+[1;31mE (148583) HTTP_NOTIFIER: [0m
+[1;31mE (148583) HTTP_NOTIFIER: 🔍 DEBUG STEPS:[0m
+[1;31mE (148583) HTTP_NOTIFIER:    1. Check ESP32-C3 serial monitor for IP address[0m
+[1;31mE (148593) HTTP_NOTIFIER:    2. Update ESP32C3_IP in main code[0m
+[1;31mE (148593) HTTP_NOTIFIER:    3. Test with: curl http://10.160.206.5:8080/buzzer[0m
+[1;31mE (148603) HTTP_NOTIFIER: [0m
+[0;33mW (148603) ESP32-CAM: ✗ Failed to send HTTP notification to 10.160.206.5[0m
+[0;33mW (148613) ESP32-CAM: Check: 1) ESP32-C3 is powered on, 2) IP address is correct, 3) WiFi connected[0m
+[0;32mI (148623) ESP32-CAM: === SUCCESS ===[0m
