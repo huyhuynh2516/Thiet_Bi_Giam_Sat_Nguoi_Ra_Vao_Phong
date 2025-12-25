@@ -1,4 +1,4 @@
-# Install script for directory: D:/ESPproject/test_buzzer_3/main
+# Install script for directory: D:/ESPproject/Thiet_bi_giam_sat/buzzer_3/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

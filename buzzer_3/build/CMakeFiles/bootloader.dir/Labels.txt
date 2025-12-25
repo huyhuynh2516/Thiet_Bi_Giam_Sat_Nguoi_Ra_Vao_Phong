@@ -1,13 +1,13 @@
 # Target labels
  bootloader
 # Source files and their labels
-D:/ESPproject/test_buzzer_3/build/CMakeFiles/bootloader
-D:/ESPproject/test_buzzer_3/build/CMakeFiles/bootloader.rule
-D:/ESPproject/test_buzzer_3/build/CMakeFiles/bootloader-complete.rule
-D:/ESPproject/test_buzzer_3/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
-D:/ESPproject/test_buzzer_3/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
-D:/ESPproject/test_buzzer_3/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
-D:/ESPproject/test_buzzer_3/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
-D:/ESPproject/test_buzzer_3/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
-D:/ESPproject/test_buzzer_3/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
-D:/ESPproject/test_buzzer_3/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
+D:/ESPproject/Thiet_bi_giam_sat/buzzer_3/build/CMakeFiles/bootloader
+D:/ESPproject/Thiet_bi_giam_sat/buzzer_3/build/CMakeFiles/bootloader.rule
+D:/ESPproject/Thiet_bi_giam_sat/buzzer_3/build/CMakeFiles/bootloader-complete.rule
+D:/ESPproject/Thiet_bi_giam_sat/buzzer_3/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+D:/ESPproject/Thiet_bi_giam_sat/buzzer_3/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+D:/ESPproject/Thiet_bi_giam_sat/buzzer_3/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+D:/ESPproject/Thiet_bi_giam_sat/buzzer_3/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+D:/ESPproject/Thiet_bi_giam_sat/buzzer_3/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+D:/ESPproject/Thiet_bi_giam_sat/buzzer_3/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+D:/ESPproject/Thiet_bi_giam_sat/buzzer_3/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

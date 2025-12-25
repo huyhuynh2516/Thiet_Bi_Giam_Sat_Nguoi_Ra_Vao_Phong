@@ -1,2 +1,2 @@
-source D:/ESPproject/test_buzzer_3/build/bootloader/gdbinit/symbols
-source D:/ESPproject/test_buzzer_3/build/bootloader/gdbinit/connect
+source D:/ESPproject/Thiet_bi_giam_sat/buzzer_3/build/bootloader/gdbinit/symbols
+source D:/ESPproject/Thiet_bi_giam_sat/buzzer_3/build/bootloader/gdbinit/connect

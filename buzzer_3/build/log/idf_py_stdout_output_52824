@@ -1,0 +1,330 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xf (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1574
+load:0x403cc710,len:0xc34
+load:0x403ce710,len:0x2f64
+entry 0x403cc71a
+[0;32mI (30) boot: ESP-IDF v5.4.3 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Dec 24 2025 13:46:44[0m
+[0;32mI (30) boot: chip revision: v0.4[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (38) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=1a930h (108848) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0002a958 vaddr=3fc93c00 size=02e90h ( 11920) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0002d7f0 vaddr=40380000 size=02828h ( 10280) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=98824h (624676) map[0m
+[0;32mI (217) esp_image: segment 4: paddr=000c884c vaddr=40382828 size=11378h ( 70520) load[0m
+[0;32mI (230) esp_image: segment 5: paddr=000d9bcc vaddr=50000000 size=0001ch (    28) load[0m
+[0;32mI (237) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (237) boot: Disabling RNG early entropy source...[0m
+[0;32mI (248) cpu_start: Unicore app[0m
+[0;32mI (256) cpu_start: Pro cpu start user code[0m
+[0;32mI (256) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (256) app_init: Application information:[0m
+[0;32mI (256) app_init: Project name:     test_buzzer_3[0m
+[0;32mI (261) app_init: App version:      4b0a3a2-dirty[0m
+[0;32mI (265) app_init: Compile time:     Dec 24 2025 13:46:37[0m
+[0;32mI (270) app_init: ELF file SHA256:  5651749fe...[0m
+[0;32mI (275) app_init: ESP-IDF:          v5.4.3[0m
+[0;32mI (278) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (282) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (286) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (290) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (296) heap_init: At 3FC9BF70 len 00024090 (144 KiB): RAM[0m
+[0;32mI (301) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (308) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (314) heap_init: At 5000001C len 00001FCC (7 KiB): RTCRAM[0m
+[0;32mI (320) spi_flash: detected chip: generic[0m
+[0;32mI (323) spi_flash: flash io: dio[0m
+[0;33mW (326) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (338) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (344) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (351) main_task: Started on CPU0[0m
+[0;32mI (361) main_task: Calling app_main()[0m
+[0;32mI (361) BUZZER_SERVER: [0m
+[0;32mI (361) BUZZER_SERVER: ╔═════════════════════════════════════════════╗[0m
+[0;32mI (371) BUZZER_SERVER: ║  ESP32-C3 Buzzer Server (DEBUG VERSION)    ║[0m
+[0;32mI (381) BUZZER_SERVER: ╚═════════════════════════════════════════════╝[0m
+[0;32mI (391) BUZZER_SERVER: [0m
+[0;32mI (401) gpio: GPIO[10]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (401) BUZZER_SERVER: ✅ [GPIO] Buzzer ready on GPIO10[0m
+[0;32mI (411) BUZZER_SERVER: ✅ [ISR] Service installed[0m
+[0;32mI (411) gpio: GPIO[3]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (421) BUZZER_SERVER: ✅ [GPIO] Button configured on GPIO3[0m
+[0;32mI (431) BUZZER_SERVER: ✅ [ISR] Button handler added[0m
+[0;32mI (431) BUZZER_SERVER: [BUTTON] Task started[0m
+[0;32mI (441) BUZZER_SERVER: [AUTO BUZZER] Task started[0m
+[0;32mI (441) pp: pp rom version: 9387209[0m
+[0;32mI (441) net80211: net80211 rom version: 9387209[0m
+[0;32mI (461) wifi:wifi driver task: 3fca6e94, prio:23, stack:6656, core=0[0m
+[0;32mI (461) wifi:wifi firmware version: e8ce6e2[0m
+[0;32mI (461) wifi:wifi certification version: v7.0[0m
+[0;32mI (461) wifi:config NVS flash: enabled[0m
+[0;32mI (471) wifi:config nano formatting: disabled[0m
+[0;32mI (471) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (471) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (481) wifi:Init management short buffer num: 32[0m
+[0;32mI (481) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (491) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (491) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (491) wifi:Init static rx buffer num: 10[0m
+[0;32mI (501) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (501) wifi_init: rx ba win: 6[0m
+[0;32mI (511) wifi_init: accept mbox: 6[0m
+[0;32mI (511) wifi_init: tcpip mbox: 32[0m
+[0;32mI (511) wifi_init: udp mbox: 6[0m
+[0;32mI (511) wifi_init: tcp mbox: 6[0m
+[0;32mI (521) wifi_init: tcp tx win: 5760[0m
+[0;32mI (521) wifi_init: tcp rx win: 5760[0m
+[0;32mI (521) wifi_init: tcp mss: 1440[0m
+[0;32mI (531) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (531) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (531) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (541) phy_init: phy_version 1201,bae5dd99,Mar  3 2025,15:36:21[0m
+[0;32mI (591) wifi:mode : sta (d8:3b:da:27:99:58)[0m
+[0;32mI (591) wifi:enable tsf[0m
+[0;32mI (591) BUZZER_SERVER: wifi_init_sta finished.[0m
+[0;32mI (601) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (601) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3181) wifi:state: auth -> init (0x200)[0m
+[0;32mI (3201) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3201) BUZZER_SERVER: Retry to connect to the AP[0m
+[0;32mI (3201) BUZZER_SERVER: Connect to the AP fail[0m
+[0;32mI (5611) BUZZER_SERVER: Retry to connect to the AP[0m
+[0;32mI (5611) BUZZER_SERVER: Connect to the AP fail[0m
+[0;32mI (5611) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (5611) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (6181) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (6191) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (6211) wifi:connected with Noobs, aid = 1, channel 1, BW20, bssid = 12:ef:87:e0:31:53[0m
+[0;32mI (6211) wifi:security: WPA3-SAE, phy: bgn, rssi: -11[0m
+[0;32mI (6211) wifi:pm start, type: 1[0m
+
+[0;32mI (6221) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (6221) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (6231) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (6241) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (7271) esp_netif_handlers: sta ip: 10.160.206.5, mask: 255.255.255.0, gw: 10.160.206.142[0m
+[0;32mI (7271) BUZZER_SERVER: Got IP:10.160.206.5[0m
+[0;32mI (7271) BUZZER_SERVER: Connected to AP SSID:Noobs[0m
+[0;32mI (7271) BUZZER_SERVER: [0m
+[0;32mI (7271) BUZZER_SERVER: ╔═════════════════════════════════════════════╗[0m
+[0;32mI (7291) BUZZER_SERVER: ║          🌐 NETWORK INFORMATION             ║[0m
+[0;32mI (7291) BUZZER_SERVER: ╚═════════════════════════════════════════════╝[0m
+[0;32mI (7311) BUZZER_SERVER: 📡 WiFi SSID: Noobs[0m
+[0;32mI (7311) BUZZER_SERVER: 🌐 IP Address: 10.160.206.5[0m
+[0;32mI (7321) BUZZER_SERVER: 🔌 Port: 8080[0m
+[0;32mI (7321) BUZZER_SERVER: [0m
+[0;32mI (7321) BUZZER_SERVER: 🎯 To trigger buzzer from ESP32-CAM, use:[0m
+[0;32mI (7331) BUZZER_SERVER:    http://10.160.206.5:8080/buzzer[0m
+[0;32mI (7341) BUZZER_SERVER:    http://10.160.206.5:8080/notify[0m
+[0;32mI (7341) BUZZER_SERVER:    http://10.160.206.5:8080/trigger[0m
+[0;32mI (7351) BUZZER_SERVER: [0m
+[0;32mI (7351) BUZZER_SERVER: Socket created[0m
+[0;32mI (7351) BUZZER_SERVER: Socket bound, port 8080[0m
+[0;32mI (7361) BUZZER_SERVER: Socket listening[0m
+[0;32mI (7361) BUZZER_SERVER: ========================[0m
+[0;32mI (7361) BUZZER_SERVER: 🎯 Waiting for requests from ESP32-CAM...[0m
+[0;32mI (7371) BUZZER_SERVER: [0m
+[0;32mI (7371) BUZZER_SERVER: ═══════════════════════════════════════════════[0m
+[0;32mI (7391) BUZZER_SERVER: ✅ System Ready - Listening for requests...[0m
+[0;32mI (7391) BUZZER_SERVER: ═══════════════════════════════════════════════[0m
+[0;32mI (7411) BUZZER_SERVER: [0m
+[0;32mI (7411) BUZZER_SERVER: [STATUS #1] Buzzer=OFF 🔇 | Mode=MANUAL 👆 | Requests=0 | Triggers=0[0m
+[0;32mI (12421) BUZZER_SERVER: [STATUS #2] Buzzer=OFF 🔇 | Mode=MANUAL 👆 | Requests=0 | Triggers=0[0m
+[0;33mW (12471) BUZZER_SERVER: [BUTTON] ISR triggered! Level after 50ms=0[0m
+[0;32mI (12471) BUZZER_SERVER: >>> [BUTTON] Buzzer turned ON (manual mode) 🔊 <<<[0m
+[0;33mW (13331) BUZZER_SERVER: [BUTTON] ISR triggered! Level after 50ms=0[0m
+[0;32mI (13331) BUZZER_SERVER: >>> [BUTTON] Buzzer turned OFF 🔇 <<<[0m
+[0;32mI (13531) BUZZER_SERVER: [BUTTON] Confirmation beep done[0m
+[0;32mI (17421) BUZZER_SERVER: [STATUS #3] Buzzer=OFF 🔇 | Mode=MANUAL 👆 | Requests=0 | Triggers=0[0m
+[0;32mI (22421) BUZZER_SERVER: [STATUS #4] Buzzer=OFF 🔇 | Mode=MANUAL 👆 | Requests=0 | Triggers=0[0m
+[0;32mI (27421) BUZZER_SERVER: [STATUS #5] Buzzer=OFF 🔇 | Mode=MANUAL 👆 | Requests=0 | Triggers=0[0m
+[0;32mI (32421) BUZZER_SERVER: [STATUS #6] Buzzer=OFF 🔇 | Mode=MANUAL 👆 | Requests=0 | Triggers=0[0m
+[0;32mI (37421) BUZZER_SERVER: [STATUS #7] Buzzer=OFF 🔇 | Mode=MANUAL 👆 | Requests=0 | Triggers=0[0m
+[0;32mI (42421) BUZZER_SERVER: [STATUS #8] Buzzer=OFF 🔇 | Mode=MANUAL 👆 | Requests=0 | Triggers=0[0m
+[0;32mI (47421) BUZZER_SERVER: [STATUS #9] Buzzer=OFF 🔇 | Mode=MANUAL 👆 | Requests=0 | Triggers=0[0m
+[0;32mI (52421) BUZZER_SERVER: [STATUS #10] Buzzer=OFF 🔇 | Mode=MANUAL 👆 | Requests=0 | Triggers=0[0m
+[0;32mI (57421) BUZZER_SERVER: [STATUS #11] Buzzer=OFF 🔇 | Mode=MANUAL 👆 | Requests=0 | Triggers=0[0m
+[0;32mI (62421) BUZZER_SERVER: [STATUS #12] Buzzer=OFF 🔇 | Mode=MANUAL 👆 | Requests=0 | Triggers=0[0m
+[0;32mI (67421) BUZZER_SERVER: [STATUS #13] Buzzer=OFF 🔇 | Mode=MANUAL 👆 | Requests=0 | Triggers=0[0m
+[0;32mI (72421) BUZZER_SERVER: [STATUS #14] Buzzer=OFF 🔇 | Mode=MANUAL 👆 | Requests=0 | Triggers=0[0m
+[0;32mI (77421) BUZZER_SERVER: [STATUS #15] Buzzer=OFF 🔇 | Mode=MANUAL 👆 | Requests=0 | Triggers=0[0m
+[0;32mI (82421) BUZZER_SERVER: [STATUS #16] Buzzer=OFF 🔇 | Mode=MANUAL 👆 | Requests=0 | Triggers=0[0m
+[0;32mI (87421) BUZZER_SERVER: [STATUS #17] Buzzer=OFF 🔇 | Mode=MANUAL 👆 | Requests=0 | Triggers=0[0m
+[0;32mI (92421) BUZZER_SERVER: [STATUS #18] Buzzer=OFF 🔇 | Mode=MANUAL 👆 | Requests=0 | Triggers=0[0m
+[0;32mI (97421) BUZZER_SERVER: [STATUS #19] Buzzer=OFF 🔇 | Mode=MANUAL 👆 | Requests=0 | Triggers=0[0m
+[0;32mI (102421) BUZZER_SERVER: [STATUS #20] Buzzer=OFF 🔇 | Mode=MANUAL 👆 | Requests=0 | Triggers=0[0m
+[0;32mI (107421) BUZZER_SERVER: [STATUS #21] Buzzer=OFF 🔇 | Mode=MANUAL 👆 | Requests=0 | Triggers=0[0m
+[0;32mI (112421) BUZZER_SERVER: [STATUS #22] Buzzer=OFF 🔇 | Mode=MANUAL 👆 | Requests=0 | Triggers=0[0m
+[0;32mI (117421) BUZZER_SERVER: [STATUS #23] Buzzer=OFF 🔇 | Mode=MANUAL 👆 | Requests=0 | Triggers=0[0m
+[0;32mI (122421) BUZZER_SERVER: [STATUS #24] Buzzer=OFF 🔇 | Mode=MANUAL 👆 | Requests=0 | Triggers=0[0m
+[0;32mI (127421) BUZZER_SERVER: [STATUS #25] Buzzer=OFF 🔇 | Mode=MANUAL 👆 | Requests=0 | Triggers=0[0m
+[0;32mI (132421) BUZZER_SERVER: [STATUS #26] Buzzer=OFF 🔇 | Mode=MANUAL 👆 | Requests=0 | Triggers=0[0m
+[0;32mI (137421) BUZZER_SERVER: [STATUS #27] Buzzer=OFF 🔇 | Mode=MANUAL 👆 | Requests=0 | Triggers=0[0m
+[0;32mI (142421) BUZZER_SERVER: [STATUS #28] Buzzer=OFF 🔇 | Mode=MANUAL 👆 | Requests=0 | Triggers=0[0m
+[0;32mI (147421) BUZZER_SERVER: [STATUS #29] Buzzer=OFF 🔇 | Mode=MANUAL 👆 | Requests=0 | Triggers=0[0m
+[0;32mI (152421) BUZZER_SERVER: [STATUS #30] Buzzer=OFF 🔇 | Mode=MANUAL 👆 | Requests=0 | Triggers=0[0m
+[0;32mI (157421) BUZZER_SERVER: [STATUS #31] Buzzer=OFF 🔇 | Mode=MANUAL 👆 | Requests=0 | Triggers=0[0m
+[0;32mI (162421) BUZZER_SERVER: [STATUS #32] Buzzer=OFF 🔇 | Mode=MANUAL 👆 | Requests=0 | Triggers=0[0m
+[0;32mI (167421) BUZZER_SERVER: [STATUS #33] Buzzer=OFF 🔇 | Mode=MANUAL 👆 | Requests=0 | Triggers=0[0m
+[0;32mI (172421) BUZZER_SERVER: [STATUS #34] Buzzer=OFF 🔇 | Mode=MANUAL 👆 | Requests=0 | Triggers=0[0m
+[0;32mI (177421) BUZZER_SERVER: [STATUS #35] Buzzer=OFF 🔇 | Mode=MANUAL 👆 | Requests=0 | Triggers=0[0m
+[0;32mI (182421) BUZZER_SERVER: [STATUS #36] Buzzer=OFF 🔇 | Mode=MANUAL 👆 | Requests=0 | Triggers=0[0m
+[0;32mI (187421) BUZZER_SERVER: [STATUS #37] Buzzer=OFF 🔇 | Mode=MANUAL 👆 | Requests=0 | Triggers=0[0m
+[0;32mI (192421) BUZZER_SERVER: [STATUS #38] Buzzer=OFF 🔇 | Mode=MANUAL 👆 | Requests=0 | Triggers=0[0m
+[0;32mI (197421) BUZZER_SERVER: [STATUS #39] Buzzer=OFF 🔇 | Mode=MANUAL 👆 | Requests=0 | Triggers=0[0m
+[0;32mI (202421) BUZZER_SERVER: [STATUS #40] Buzzer=OFF 🔇 | Mode=MANUAL 👆 | Requests=0 | Triggers=0[0m
+[0;32mI (207421) BUZZER_SERVER: [STATUS #41] Buzzer=OFF 🔇 | Mode=MANUAL 👆 | Requests=0 | Triggers=0[0m
+[0;32mI (212421) BUZZER_SERVER: [STATUS #42] Buzzer=OFF 🔇 | Mode=MANUAL 👆 | Requests=0 | Triggers=0[0m
+[0;32mI (217421) BUZZER_SERVER: [STATUS #43] Buzzer=OFF 🔇 | Mode=MANUAL 👆 | Requests=0 | Triggers=0[0m
+[0;32mI (222421) BUZZER_SERVER: [STATUS #44] Buzzer=OFF 🔇 | Mode=MANUAL 👆 | Requests=0 | Triggers=0[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:5172
+load:0x40078000,len:15232
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3740
+entry 0x4008061c
+[0;32mI (31) boot: ESP-IDF v5.4.3 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 24 2025 13:36:25[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2d848h (186440) map[0m
+[0;32mI (154) esp_image: segment 1: paddr=0003d870 vaddr=3ffb0000 size=027a8h ( 10152) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=a0b84h (658308) map[0m
+[0;32mI (383) esp_image: segment 3: paddr=000e0bac vaddr=3ffb27a8 size=03a1ch ( 14876) load[0m
+[0;32mI (389) esp_image: segment 4: paddr=000e45d0 vaddr=40080000 size=18c44h (101444) load[0m
+[0;32mI (428) esp_image: segment 5: paddr=000fd21c vaddr=50000000 size=0001ch (    28) load[0m
+[0;32mI (441) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (441) boot: Disabling RNG early entropy source...[0m
+[0;32mI (452) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (452) esp_psram: Found 4MB PSRAM device[0m
+[0;32mI (452) esp_psram: Speed: 40MHz[0m
+[0;32mI (452) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;32mI (459) cpu_start: Multicore app[0m
+[0;32mI (1353) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1361) cpu_start: Pro cpu start user code[0m
+[0;32mI (1361) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1361) app_init: Application information:[0m
+[0;32mI (1361) app_init: Project name:     test_cam_3[0m
+[0;32mI (1365) app_init: App version:      4b0a3a2-dirty[0m
+[0;32mI (1370) app_init: Compile time:     Dec 24 2025 13:36:18[0m
+[0;32mI (1375) app_init: ELF file SHA256:  63a795932...[0m
+[0;32mI (1379) app_init: ESP-IDF:          v5.4.3[0m
+[0;32mI (1383) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1387) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (1391) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (1395) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1401) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1407) heap_init: At 3FFBB200 len 00024E00 (147 KiB): DRAM[0m
+[0;32mI (1412) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1417) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1423) heap_init: At 40098C44 len 000073BC (28 KiB): IRAM[0m
+[0;32mI (1429) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (1436) spi_flash: detected chip: generic[0m
+[0;32mI (1439) spi_flash: flash io: dio[0m
+[0;32mI (1443) main_task: Started on CPU0[0m
+[0;32mI (1453) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1453) main_task: Calling app_main()[0m
+[0;32mI (1453) ESP32-CAM: [0m
+=== ESP32-CAM Pure ESP-IDF Starting ===
+[0;32mI (1493) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (1493) cam_hal: cam init ok[0m
+[0;32mI (1493) sccb-ng: pin_sda 26 pin_scl 27[0m
+[0;32mI (1493) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1493) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1533) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1533) camera: Detected OV2640 camera[0m
+[0;32mI (1533) camera: Detected camera at address=0x30[0m
+[0;32mI (1603) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (1603) cam_hal: buffer_size: 32768, half_buffer_size: 4096, node_buffer_size: 2048, node_cnt: 16, total_cnt: 23[0m
+[0;32mI (1613) cam_hal: Allocating 96000 Byte frame buffer in PSRAM[0m
+[0;32mI (1613) cam_hal: cam config ok[0m
+[0;32mI (1613) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+[0;32mI (1683) ESP32-CAM: Camera initialized[0m
+[0;32mI (1683) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1683) ESP32-CAM: Flash LED initialized[0m
+[0;32mI (1703) wifi:wifi driver task: 3ffd46c8, prio:23, stack:6656, core=0[0m
+[0;32mI (1713) wifi:wifi firmware version: e8ce6e2[0m
+[0;32mI (1713) wifi:wifi certification version: v7.0[0m
+[0;32mI (1713) wifi:config NVS flash: enabled[0m
+[0;32mI (1713) wifi:config nano formatting: disabled[0m
+[0;32mI (1713) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1723) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1723) wifi:Init management short buffer num: 32[0m
+[0;32mI (1733) wifi:Init dynamic tx buffer num: 32[0m
+cam_hal: EV-EOF-OVF
+[0;32mI (1733) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1743) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1743) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1753) wifi_init: rx ba win: 6[0m
+[0;32mI (1753) wifi_init: accept mbox: 6[0m
+[0;32mI (1753) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1753) wifi_init: udp mbox: 6[0m
+[0;32mI (1763) wifi_init: tcp mbox: 6[0m
+[0;32mI (1763) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1763) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1773) wifi_init: tcp mss: 1440[0m
+[0;32mI (1773) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1773) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1783) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (1863) wifi:mode : sta (14:08:08:ac:67:64)[0m
+[0;32mI (1863) wifi:enable tsf[0m
+[0;32mI (1863) ESP32-CAM: WiFi started, connecting to Noobs...[0m
+[0;32mI (1873) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1873) wifi:state: init -> auth (0xb0)[0m
+cam_hal: NO-SOI - JPEG start marker missing
+cam_hal: NO-SOI - JPEG start marker missing
+[0;32mI (5033) wifi:state: auth -> init (0x200)[0m
+[0;32mI (5053) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (5053) ESP32-CAM: WiFi disconnected, retrying...[0m
+[0;32mI (6863) ESP32-CAM: WiFi connected! Ready to send HTTP notifications to ESP32-C3[0m
+[0;32mI (6863) ESP32-CAM: ESP32-C3 should be at: 10.160.206.5:8080[0m
+[0;32mI (6863) ESP32-CAM: SNTP initialized[0m
+[0;32mI (6863) ESP32-CAM: Starting HTTP server on port 80[0m
+[0;32mI (6873) ESP32-CAM: HTTP server started[0m
+[0;32mI (6873) ESP32-CAM: === System Ready ===[0m
+[0;32mI (6873) ESP32-CAM: Open browser and go to ESP32-CAM IP address[0m
+[0;32mI (6883) ESP32-CAM: ========================[0m
+[0;32mI (7473) ESP32-CAM: WiFi disconnected, retrying...[0m
+[0;32mI (7483) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (7483) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (8633) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (8643) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (8673) wifi:connected with Noobs, aid = 2, channel 1, BW20, bssid = 12:ef:87:e0:31:53[0m
+[0;32mI (8673) wifi:security: WPA3-SAE, phy: bgn, rssi: -47[0m
+[0;32mI (8673) wifi:pm start, type: 1[0m
+
+[0;32mI (8673) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (8713) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (8713) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (9713) esp_netif_handlers: sta ip: 10.160.206.155, mask: 255.255.255.0, gw: 10.160.206.142[0m
+[0;32mI (9713) ESP32-CAM: Got IP: 10.160.206.155[0m
