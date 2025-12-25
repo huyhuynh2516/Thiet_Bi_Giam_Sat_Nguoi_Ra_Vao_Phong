@@ -39,6 +39,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/ESPproject/test_buzzer_3/build/esp-idf/esp_system/port/soc/esp32c3/cmake_install.cmake")
+  include("D:/ESPproject/Thiet_bi_giam_sat/buzzer_3/build/esp-idf/esp_system/port/soc/esp32c3/cmake_install.cmake")
 endif()
 
